@@ -157,5 +157,30 @@ return {
         },
       },
     })
+
+    -- configure ruby server
+    lspconfig["solargraph"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+      settings = {
+        solargraph = {
+          diagnostics = true,
+          commandPath = "/home/jpstudioweb/.rbenv/shims/solargraph",
+          useBundler = {
+            "bundle",
+            "exec",
+          },
+          completion = true,
+          hover = true,
+          formatting = false,
+          autoformat = true,
+          symbols = true,
+          definitions = true,
+          rename = true,
+          references = true,
+          folding = true,
+        },
+      },
+    })
   end,
 }
