@@ -47,7 +47,29 @@ return {
           processId = require("dap.utils").pick_process,
         },
       }
+
+      -- configuração do adaptador ruby
+      dap.adapters.ruby = {
+        type = "executable",
+        command = "rdbg",
+        args = { "--port=12345", "--host=127.0.0.1", "--" },
+      }
+
+      dap.configurations.ruby = {
+        {
+          type = "ruby",
+          request = "attach",
+          name = "debug",
+          program = "${file}", -- para depurar o arquivo atual
+          port = 12345,
+        },
+      }
     end,
+  },
+  -- nvim-dap-ruby
+  {
+    "suketa/nvim-dap-ruby",
+    requires = { "mfussenegger/nvim-dap" },
   },
   -- UI para DAP
   {
@@ -55,13 +77,43 @@ return {
     requires = { "mfussenegger/nvim-dap" },
     config = function()
       require("dapui").setup({
-        -- Sua configuração para dap-ui vai aqui.
-        -- Por exemplo:
+        -- icons = {
+        --   expanded = "▾",
+        --   collapsed = "▸",
+        -- },
+        -- mappings = {
+        --   -- Use `K` para saltar para a documentação ou variáveis
+        --   hover = "K",
+        --   -- Você pode definir outros atalhos específicos aqui
+        -- },
         -- sidebar = {
         --   open_on_start = true,
-        --   ...
+        --   elements = {
+        --     -- Você pode escolher os elementos que deseja ver na barra lateral usando estes
+        --     "scopes",
+        --     "breakpoints",
+        --     "stacks",
+        --     "watches",
+        --   },
+        --   width = 40,
+        --   position = "left", -- Mudar para "right" para colocar a barra lateral no lado direito
         -- },
-        -- Toggle UI
+        -- tray = {
+        --   open_on_start = true,
+        --   elements = {
+        --     "repl",
+        --   },
+        --   height = 10,
+        --   position = "bottom", -- "bottom" ou "top"
+        -- },
+        -- floating = {
+        --   max_height = nil, -- máximo de altura da janela flutuante
+        --   max_width = nil, -- máximo de largura da janela flutuante
+        --   mappings = {
+        --     close = { "q", "<Esc>" },
+        --   },
+        -- },
+        -- windows = { indent = 1 },
       })
     end,
   },
