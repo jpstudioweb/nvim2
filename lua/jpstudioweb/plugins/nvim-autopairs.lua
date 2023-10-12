@@ -18,6 +18,31 @@ return {
       },
     })
 
+    -- Adicionar regra específica para = em tags HTML acrescenta um ""
+    local Rule = require("nvim-autopairs.rule")
+    autopairs.add_rule(Rule("=", '""', "html")
+      :with_pair(function(_, _, _, _)
+        local prev_col = vim.api.nvim_win_get_cursor(0)[2]
+        local prev_char = vim.api
+          .nvim_buf_get_lines(0, vim.api.nvim_win_get_cursor(0)[1] - 1, vim.api.nvim_win_get_cursor(0)[1], false)[1]
+          :sub(prev_col, prev_col)
+        return prev_char ~= '"'
+      end)
+      :with_move(function(_, _, _, _)
+        local next_col = vim.api.nvim_win_get_cursor(0)[2] + 1
+        local next_char = vim.api
+          .nvim_buf_get_lines(0, vim.api.nvim_win_get_cursor(0)[1] - 1, vim.api.nvim_win_get_cursor(0)[1], false)[1]
+          :sub(next_col, next_col)
+        return next_char == '"'
+      end)
+      :with_del(function(_, _, _, _)
+        local col = vim.api.nvim_win_get_cursor(0)[2] + 1
+        local next_char = vim.api
+          .nvim_buf_get_lines(0, vim.api.nvim_win_get_cursor(0)[1] - 1, vim.api.nvim_win_get_cursor(0)[1], false)[1]
+          :sub(col, col)
+        return next_char == '"'
+      end))
+
     -- import nvim-autopairs completion functionality
     local cmp_autopairs = require("nvim-autopairs.completion.cmp")
 
