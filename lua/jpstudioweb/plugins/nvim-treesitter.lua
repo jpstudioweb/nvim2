@@ -6,6 +6,7 @@ return {
     dependencies = {
       "nvim-treesitter/nvim-treesitter-textobjects",
       "windwp/nvim-ts-autotag",
+      "RRethy/nvim-treesitter-endwise",
     },
     config = function()
       -- import nvim-treesitter plugin
@@ -20,6 +21,10 @@ return {
         indent = { enable = true },
         -- enable autotagging (w/ nvim-ts-autotag plugin)
         autotag = {
+          enable = true,
+        },
+        -- add endwise configuration here
+        endwise = {
           enable = true,
         },
         -- ensure these language parsers are installed
@@ -38,6 +43,7 @@ return {
           "graphql",
           "bash",
           "lua",
+          "ruby",
           "vim",
           "dockerfile",
           "gitignore",
