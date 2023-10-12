@@ -16,8 +16,8 @@ return {
       ensure_installed = {
         "prettier", -- prettier formatter
         "stylua", -- lua formatter
-        "black", -- python formatter
-        "pylint", -- python linter
+        -- "black", -- python formatter
+        -- "pylint", -- python linter
         "eslint_d", -- js linter
         "rubocop", -- ruby linter
         "rufo", -- ruby formatter
@@ -43,7 +43,7 @@ return {
           extra_filetypes = { "svelte" },
         }), -- js/ts formatter
         formatting.stylua, -- lua formatter
-        formatting.isort,
+        -- formatting.isort,
         formatting.black,
         diagnostics.pylint,
         diagnostics.eslint_d.with({ -- js/ts linter
