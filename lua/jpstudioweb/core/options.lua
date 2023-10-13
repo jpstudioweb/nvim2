@@ -62,6 +62,9 @@ vim.cmd("autocmd ColorScheme * hi DiagnosticSignError ctermbg=NONE guibg=NONE")
 vim.cmd("autocmd ColorScheme * hi DiagnosticSignWarning ctermbg=NONE guibg=NONE")
 vim.cmd("autocmd ColorScheme * hi DiagnosticSignInformation ctermbg=NONE guibg=NONE")
 vim.cmd("autocmd ColorScheme * hi DiagnosticSignHint ctermbg=NONE guibg=NONE")
+vim.cmd("autocmd ColorScheme * hi GitSignsAdd ctermbg=NONE guibg=NONE")
+vim.cmd("autocmd ColorScheme * hi GitSignsChange ctermbg=NONE guibg=NONE")
+vim.cmd("autocmd ColorScheme * hi GitSignsDelete ctermbg=NONE guibg=NONE")
 
 -- backspace
 opt.backspace = "indent,eol,start" -- allow backspace on indent, end of line or insert mode start position
