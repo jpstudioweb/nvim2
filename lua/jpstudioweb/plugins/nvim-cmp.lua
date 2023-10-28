@@ -29,6 +29,11 @@ return {
         end,
       },
       mapping = cmp.mapping.preset.insert({
+        ["<Tab>"] = cmp.mapping.confirm({
+          behavior = cmp.ConfirmBehavior.Replace,
+          select = true,
+        }),
+        ["<S-Tab>"] = cmp.mapping.select_prev_item(),
         ["<C-k>"] = cmp.mapping.select_prev_item(), -- previous suggestion
         ["<C-j>"] = cmp.mapping.select_next_item(), -- next suggestion
         ["<C-b>"] = cmp.mapping.scroll_docs(-4),

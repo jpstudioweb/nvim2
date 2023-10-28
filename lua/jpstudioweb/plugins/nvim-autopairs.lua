@@ -25,6 +25,10 @@ return {
     local cmp = require("cmp")
 
     -- make autopairs and completion work together
-    cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
+    cmp.event:on("confirm_done", function(e)
+      if e.completed_item and (e.completed_item.kind ~= "Function" and e.completed_item.kind ~= "Method") then
+        cmp_autopairs.on_confirm_done()
+      end
+    end)
   end,
 }
