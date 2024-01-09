@@ -182,5 +182,20 @@ return {
         },
       },
     })
+
+    -- configure elixir server
+    lspconfig["elixirls"].setup({
+      cmd = { "/home/jpstudioweb/.local/share/nvim/mason/packages/elixir-ls/launch.sh" },
+      root_dir = function(fname)
+        return lspconfig.util.find_git_ancestor(fname) or lspconfig.util.path.dirname(fname)
+      end,
+      capabilities = capabilities,
+      on_attach = on_attach,
+      settings = {
+        elixirLS = {
+          -- (opcional) Configure aqui outras definições específicas do servidor ElixirLS
+        },
+      },
+    })
   end,
 }
