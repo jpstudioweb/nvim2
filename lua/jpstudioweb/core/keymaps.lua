@@ -12,8 +12,8 @@ keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 
--- execute ruby code
-keymap.set("n", "<leader>b", ":! ruby %<CR>")
+-- execute python code
+keymap.set("n", "<leader>b", ":! python %<CR>")
 
 -- delete single character without copying into register
 -- keymap.set("n", "x", '"_x')
