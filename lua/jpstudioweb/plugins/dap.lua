@@ -21,56 +21,28 @@ return {
       -- Para adicionar uma expressão de watch
       keymap.set("n", "<leader>uw", "<cmd>lua require'dapui'.eval()<CR>", { desc = "Watch expression" })
 
-      -- adaptador Node.js:
-      dap.adapters.node2 = {
+      -- Adicionando o adaptador de depuração Python
+      dap.adapters.python = {
         type = "executable",
-        command = "node",
-        args = { os.getenv("HOME") .. "/dev/microsoft/vscode-node-debug2/out/src/nodeDebug.js" },
+        command = "python",
+        args = { "-m", "debugpy.adapter" },
       }
 
-      dap.configurations.javascript = {
+      -- Configurações específicas para depuração Python
+      dap.configurations.python = {
         {
-          name = "Launch",
-          type = "node2",
+          name = "Launch file",
+          type = "python",
           request = "launch",
           program = "${file}",
-          cwd = vim.fn.getcwd(),
-          sourceMaps = true,
-          protocol = "inspector",
-          console = "integratedTerminal",
-        },
-        {
-          -- For this to work you need to make sure the node process is started with the `--inspect` flag.
-          name = "Attach to process",
-          type = "node2",
-          request = "attach",
-          processId = require("dap.utils").pick_process,
-        },
-      }
-
-      -- configuração do adaptador ruby
-      dap.adapters.ruby = {
-        type = "executable",
-        command = "rdbg",
-        args = { "--port=12345", "--host=127.0.0.1", "--" },
-      }
-
-      dap.configurations.ruby = {
-        {
-          type = "ruby",
-          request = "attach",
-          name = "debug",
-          program = "${file}", -- para depurar o arquivo atual
-          port = 12345,
+          pythonPath = function()
+            return "python"
+          end,
         },
       }
     end,
   },
-  -- nvim-dap-ruby
-  {
-    "suketa/nvim-dap-ruby",
-    requires = { "mfussenegger/nvim-dap" },
-  },
+
   -- UI para DAP
   {
     "rcarriga/nvim-dap-ui",
