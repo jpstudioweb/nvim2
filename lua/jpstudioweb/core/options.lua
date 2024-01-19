@@ -16,14 +16,6 @@ opt.autoindent = true -- copy indent from current line when starting new one
 opt.smartindent = true
 opt.smarttab = true
 
--- End file new line
-vim.cmd([[
-  augroup EnsureNewline
-    autocmd!
-    autocmd BufWritePre * if getline('$') !~# '^$' | call append('$', '') | endif
-  augroup END
-]])
-
 -- Diagnostics
 vim.diagnostic.config({
   virtual_text = false,
