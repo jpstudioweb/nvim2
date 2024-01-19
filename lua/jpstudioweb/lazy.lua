@@ -13,7 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({ { import = "jpstudioweb.plugins" }, { import = "jpstudioweb.plugins.lsp" } }, {
   install = {
-    colorscheme = { "gruvbox" },
+    colorscheme = { "everforest" },
   },
   checker = {
     enabled = true,
