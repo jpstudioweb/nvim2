@@ -77,3 +77,18 @@ opt.swapfile = false
 
 -- Ecoding: UTF-8
 opt.encoding = "UTF-8"
+
+-- show reference after a time
+-- local function delayed_hover()
+--   if vim.fn.mode() == "n" then
+--     vim.lsp.buf.hover()
+--   end
+-- end
+--
+-- vim.api.nvim_create_autocmd({ "CursorHold" }, {
+--   callback = function()
+--     vim.defer_fn(delayed_hover, 2000)
+--   end,
+-- })
+--
+-- vim.o.updatetime = 2000
