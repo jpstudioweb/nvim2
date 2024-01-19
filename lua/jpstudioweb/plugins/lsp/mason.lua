@@ -36,7 +36,7 @@ return {
         "graphql",
         "emmet_ls",
         "prismals",
-        "pyright",
+        "jedi_language_server",
         "solargraph",
       },
       -- auto-install configured servers (with lspconfig)
@@ -49,7 +49,7 @@ return {
         "stylua", -- lua formatter
         "isort", -- python formatter
         "black", -- python formatter
-        "pylint", -- python linter
+        "flake8", -- python linter
         "eslint_d", -- js linter
         "rubocop", -- ruby linter
         "rufo", -- ruby formatter
