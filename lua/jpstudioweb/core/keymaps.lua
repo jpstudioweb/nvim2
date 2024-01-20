@@ -7,26 +7,48 @@ local keymap = vim.keymap -- for conciseness
 -- General Keymaps -------------------
 
 -- use jk to exit insert mode
-keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
+keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode quickly using 'jk'" })
 
 -- clear search highlights
-keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
+keymap.set(
+  "n",
+  "<leader>nh",
+  ":nohl<CR>",
+  { desc = "Clear all search highlights in the buffer, enhancing readability" }
+)
 
 -- execute python code
-keymap.set("n", "<leader>b", ":! python %<CR>")
-
--- delete single character without copying into register
--- keymap.set("n", "x", '"_x')
+keymap.set(
+  "n",
+  "<leader>b",
+  ":! python %<CR>",
+  { desc = "Run the current Python script. Shortcut for quick testing and execution" }
+)
 
 -- increment/decrement numbers
-keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment number" }) -- increment
-keymap.set("n", "<leader>-", "<C-x>", { desc = "Decrement number" }) -- decrement
+keymap.set(
+  "n",
+  "<leader>+",
+  "<C-a>",
+  { desc = "Increment the number under the cursor. Useful for quick numerical edits" }
+)
+keymap.set(
+  "n",
+  "<leader>-",
+  "<C-x>",
+  { desc = "Decrement the number under the cursor. Complements the increment shortcut" }
+)
 
 -- window management
-keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" }) -- split window vertically
-keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" }) -- split window horizontally
-keymap.set("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" }) -- make split windows equal width & height
-keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" }) -- close current split window
+keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split the window vertically for side-by-side editing" })
+keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split the window horizontally to view files top and bottom" })
+keymap.set("n", "<leader>se", "<C-w>=", { desc = "Equalize the size of split windows for a balanced workspace" })
+keymap.set(
+  "n",
+  "<leader>sx",
+  "<cmd>close<CR>",
+  { desc = "Close the current split window. Handy for cleaning up the workspace" }
+)
 
 keymap.set("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "Open new tab" }) -- open new tab
 keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" }) -- close current tab

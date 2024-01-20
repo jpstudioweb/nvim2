@@ -5,7 +5,7 @@ return {
   },
   config = function()
     -- set keymaps
-    local keymap = vim.keymap -- for conciseness
+    local keymap = vim.keymap
 
     keymap.set(
       "n",

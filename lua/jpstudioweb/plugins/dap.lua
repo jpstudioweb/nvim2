@@ -8,7 +8,7 @@ return {
 
       -- Configurations of nvim-dap.
       -- set keymaps
-      local keymap = vim.keymap -- for conciseness
+      local keymap = vim.keymap
       keymap.set("n", "<leader>ua", "<cmd>lua require'dap'.continue()<CR>", { desc = "DAP Continue" })
       keymap.set("n", "<leader>ub", "<cmd>lua require'dap'.step_over()<CR>", { desc = "DAP Step Over" })
       keymap.set("n", "<leader>uc", "<cmd>lua require'dap'.step_into()<CR>", { desc = "DAP Step Into" })
@@ -49,43 +49,43 @@ return {
     requires = { "mfussenegger/nvim-dap" },
     config = function()
       require("dapui").setup({
-        -- icons = {
-        --   expanded = "▾",
-        --   collapsed = "▸",
-        -- },
-        -- mappings = {
-        --   -- Use `K` para saltar para a documentação ou variáveis
-        --   hover = "K",
-        --   -- Você pode definir outros atalhos específicos aqui
-        -- },
-        -- sidebar = {
-        --   open_on_start = true,
-        --   elements = {
-        --     -- Você pode escolher os elementos que deseja ver na barra lateral usando estes
-        --     "scopes",
-        --     "breakpoints",
-        --     "stacks",
-        --     "watches",
-        --   },
-        --   width = 40,
-        --   position = "left", -- Mudar para "right" para colocar a barra lateral no lado direito
-        -- },
-        -- tray = {
-        --   open_on_start = true,
-        --   elements = {
-        --     "repl",
-        --   },
-        --   height = 10,
-        --   position = "bottom", -- "bottom" ou "top"
-        -- },
-        -- floating = {
-        --   max_height = nil, -- máximo de altura da janela flutuante
-        --   max_width = nil, -- máximo de largura da janela flutuante
-        --   mappings = {
-        --     close = { "q", "<Esc>" },
-        --   },
-        -- },
-        -- windows = { indent = 1 },
+        icons = {
+          expanded = "▾",
+          collapsed = "▸",
+        },
+        mappings = {
+          -- Use `K` para saltar para a documentação ou variáveis
+          hover = "K",
+          -- Você pode definir outros atalhos específicos aqui
+        },
+        sidebar = {
+          open_on_start = true,
+          elements = {
+            -- Você pode escolher os elementos que deseja ver na barra lateral usando estes
+            "scopes",
+            "breakpoints",
+            "stacks",
+            "watches",
+          },
+          width = 40,
+          position = "left", -- Mudar para "right" para colocar a barra lateral no lado direito
+        },
+        tray = {
+          open_on_start = true,
+          elements = {
+            "repl",
+          },
+          height = 10,
+          position = "bottom", -- "bottom" ou "top"
+        },
+        floating = {
+          max_height = nil, -- máximo de altura da janela flutuante
+          max_width = nil, -- máximo de largura da janela flutuante
+          mappings = {
+            close = { "q", "<Esc>" },
+          },
+        },
+        windows = { indent = 1 },
       })
     end,
   },
