@@ -25,6 +25,9 @@ keymap.set(
   { desc = "Run the current Python script. Shortcut for quick testing and execution" }
 )
 
+-- Save allopen files
+keymap.set("n", "<leader>vv", ":wa<CR>", { desc = "Save all open files" })
+
 -- increment/decrement numbers
 keymap.set(
   "n",
