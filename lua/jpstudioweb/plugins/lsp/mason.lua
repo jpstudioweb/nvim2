@@ -36,7 +36,7 @@ return {
         "graphql",
         "emmet_ls",
         "prismals",
-        "jedi_language_server",
+        "pyright",
         "solargraph",
       },
       -- auto-install configured servers (with lspconfig)
