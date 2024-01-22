@@ -89,6 +89,47 @@ return {
       })
     end,
   },
+  -- neotest
+  {
+    "nvim-neotest/neotest",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "antoinemadec/FixCursorHold.nvim",
+      "nvim-neotest/neotest-python",
+    },
+    config = function()
+      require("neotest").setup({
+        adapters = {
+          require("neotest-python")({
+            dap = {
+              justMyCode = false,
+              console = "integratedTerminal",
+            },
+            args = { "--log-level", "DEBUG" },
+            runner = "unittest",
+            pytest_discover_instances = true,
+          }),
+        },
+      })
+      -- Adicionando keymaps para neotest
+      local keymap = vim.keymap.set
+      keymap("n", "<leader>dtm", "<cmd>lua require('neotest').run.run()<CR>", { desc = "Test Method" })
+      keymap(
+        "n",
+        "<leader>dtM",
+        "<cmd>lua require('neotest').run.run({strategy = 'dap'})<CR>",
+        { desc = "Test Method DAP" }
+      )
+      keymap("n", "<leader>dtf", "<cmd>lua require('neotest').run.run(vim.fn.expand('%'))<CR>", { desc = "Test Class" })
+      keymap(
+        "n",
+        "<leader>dtF",
+        "<cmd>lua require('neotest').run.run({vim.fn.expand('%'), strategy = 'dap'})<CR>",
+        { desc = "Test Class DAP" }
+      )
+      keymap("n", "<leader>dtS", "<cmd>lua require('neotest').summary.toggle()<CR>", { desc = "Test Summary" })
+    end,
+  },
   -- Virtual text para DAP
   {
     "theHamsta/nvim-dap-virtual-text",
