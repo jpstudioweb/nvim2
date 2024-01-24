@@ -46,7 +46,6 @@ return {
   -- UI para DAP
   {
     "rcarriga/nvim-dap-ui",
-    requires = { "mfussenegger/nvim-dap" },
     config = function()
       require("dapui").setup({
         icons = {
@@ -133,6 +132,5 @@ return {
   -- Virtual text para DAP
   {
     "theHamsta/nvim-dap-virtual-text",
-    requires = { "mfussenegger/nvim-dap" },
   },
 }
