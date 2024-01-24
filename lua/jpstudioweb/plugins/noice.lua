@@ -6,7 +6,10 @@ return {
       -- add any options here
       cmdline = {
         view = "cmdline_popup",
-        filter_options = {},
+        opts = { buf_options = { filetype = "vim" } },
+        filter_options = {
+          auto_open = true,
+        },
       },
       messages = {
         enabled = true,
