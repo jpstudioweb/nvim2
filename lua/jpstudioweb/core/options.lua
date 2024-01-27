@@ -39,7 +39,7 @@ opt.hlsearch = true
 opt.showmatch = true
 
 -- cursor line
-opt.cursorline = false -- highlight the current cursor line
+opt.cursorline = true -- highlight the current cursor line
 
 -- appearance
 
