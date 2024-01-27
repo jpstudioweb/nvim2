@@ -29,7 +29,7 @@ vim.cmd([[autocmd! CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {
 
 -- line wrapping
 opt.wrap = true -- disable line wrapping
-vim.o.colorcolumn = "80"
+-- vim.o.colorcolumn = "80"
 
 -- search settings
 opt.ignorecase = true -- ignore case when searching
