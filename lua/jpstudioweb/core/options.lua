@@ -80,7 +80,7 @@ opt.swapfile = false
 opt.encoding = "UTF-8"
 
 -- Integração do triple-quote
-vim.api.nvim_create_autocmd("BufWritePost", {
-  pattern = "*.py",
-  command = "!triple-quote %",
-})
+-- vim.api.nvim_create_autocmd("BufWritePost", {
+--   pattern = "*.py",
+--   command = "!triple-quote %",
+-- })
