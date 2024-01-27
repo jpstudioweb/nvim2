@@ -11,6 +11,7 @@ return {
       ["<leader>"] = {
         c = "Descrição do comando c",
         d = "Descrição do comando d",
+        g = "LSP",
         -- Adicione descrições adicionais para outras teclas aqui
       },
     })
