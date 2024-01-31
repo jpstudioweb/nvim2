@@ -18,7 +18,6 @@ return {
         "stylua", -- lua formatter
         "black", -- python formatter
         "flake8", -- python linter
-        "djlint", -- django linter and formatter
         "eslint_d", -- js linter
         "rubocop", -- ruby linter
         "rufo", -- ruby formatter
@@ -46,8 +45,6 @@ return {
         formatting.stylua, -- lua formatter
         -- formatting.isort,
         formatting.black,
-        formatting.djlint,
-        diagnostics.djlint,
         diagnostics.flake8,
         diagnostics.eslint_d.with({ -- js/ts linter
           condition = function(utils)
