@@ -177,28 +177,9 @@ return {
     })
 
     -- configure ruby server
-    lspconfig["solargraph"].setup({
-      capabilities = capabilities,
+    lspconfig["ruby_ls"].setup({
       on_attach = on_attach,
-      settings = {
-        solargraph = {
-          diagnostics = false,
-          commandPath = "/home/jpstudioweb/.rbenv/shims/solargraph",
-          useBundler = {
-            "bundle",
-            "exec",
-          },
-          completion = true,
-          hover = false,
-          formatting = false,
-          autoformat = false,
-          symbols = false,
-          definitions = false,
-          rename = false,
-          references = false,
-          folding = false,
-        },
-      },
+      capabilities = capabilities,
     })
     -- configure markdown server
     lspconfig["marksman"].setup({

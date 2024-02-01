@@ -20,7 +20,7 @@ return {
         "flake8", -- python linter
         "eslint_d", -- js linter
         "rubocop", -- ruby linter
-        "rufo", -- ruby formatter
+        "rubyfmt", -- ruby formatter
       },
     })
 
@@ -57,7 +57,7 @@ return {
           format = "json",
           to_stdin = true,
         }),
-        formatting.rufo,
+        formatting.rubyfmt.with({}),
       },
       -- configure format on save
       on_attach = function(current_client, bufnr)
