@@ -176,11 +176,6 @@ return {
       },
     })
 
-    -- configure ruby server
-    lspconfig["ruby_ls"].setup({
-      on_attach = on_attach,
-      capabilities = capabilities,
-    })
     -- configure markdown server
     lspconfig["marksman"].setup({
       capabilities = capabilities,

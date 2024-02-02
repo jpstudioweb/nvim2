@@ -37,7 +37,6 @@ return {
         "emmet_ls",
         "prismals",
         "pyright",
-        "ruby_ls",
       },
       -- auto-install configured servers (with lspconfig)
       automatic_installation = true, -- not the same as ensure_installed
@@ -51,8 +50,6 @@ return {
         "black", -- python formatter
         "flake8", -- python linter
         "eslint_d", -- js linter
-        "rubocop", -- ruby linter
-        "rubyfmt", -- ruby formatter
       },
     })
   end,
