@@ -3,23 +3,24 @@ return {
   config = function()
     local lualine = require("lualine")
 
-    -- Cores do tema Everforest
+    -- Cores do tema Nord
     local colors = {
-      bg = "#2f383e",
-      fg = "#d3c6aa",
-      yellow = "#dbbc7f",
-      cyan = "#83c092",
-      darkblue = "#7fbbb3",
-      green = "#a7c080",
-      orange = "#e67e80",
-      violet = "#d699b6",
-      magenta = "#d699b6",
+      bg = "#3B4252", -- Nord1: used for background
+      fg = "#E5E9F0", -- Nord5: used for main foreground, caret, delimiters and operators
+      yellow = "#EBCB8B", -- Nord13: used for annotations
+      cyan = "#8FBCBB", -- Nord7: lighter cyan compared to Nord8
+      darkblue = "#5E81AC", -- Nord10: used for classes, documentation and types
+      green = "#A3BE8C", -- Nord14: used for strings and inserted text
+      orange = "#D08770", -- Nord12: used for constants and character literals
+      violet = "#B48EAD", -- Nord15: used for numbers and literals
+      magenta = "#B48EAD", -- Nord15: used for numbers and literals
+      normal_blue = "#81A1C1", -- Nord9: used for variable names and function calls
     }
 
-    -- Definição do tema para lualine baseado no Everforest
-    local everforest_theme = {
+    -- Definição do tema para lualine baseado no Nord
+    local nord_theme = {
       normal = {
-        a = { bg = colors.green, fg = colors.bg, gui = "bold" },
+        a = { bg = colors.normal_blue, fg = colors.bg, gui = "bold" }, -- Using normal_blue for the normal mode bar
         b = { bg = colors.bg, fg = colors.fg },
         c = { bg = colors.bg, fg = colors.fg },
       },
@@ -46,10 +47,10 @@ return {
       },
     }
 
-    -- Configuração do lualine com o tema modificado
+    -- Configuração do lualine com o tema Nord
     lualine.setup({
       options = {
-        theme = everforest_theme,
+        theme = nord_theme,
         -- outras opções ...
       },
       -- outras seções ...

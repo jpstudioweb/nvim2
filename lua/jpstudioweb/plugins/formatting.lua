@@ -20,6 +20,7 @@ return {
         graphql = { "prettier" },
         lua = { "stylua" },
         python = { "isort", "black" },
+        ruby = { "rubyfmt" },
       },
       format_on_save = {
         lsp_fallback = true,

@@ -43,6 +43,7 @@ return {
           "graphql",
           "bash",
           "lua",
+          "ruby",
           "vim",
           "dockerfile",
           "gitignore",
