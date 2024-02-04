@@ -58,6 +58,8 @@ opt.signcolumn = "yes" -- show sign column so that text doesn't shift
 -- vim.cmd("autocmd ColorScheme * hi GitSignsAdd ctermbg=NONE guibg=NONE")
 -- vim.cmd("autocmd ColorScheme * hi GitSignsChange ctermbg=NONE guibg=NONE")
 -- vim.cmd("autocmd ColorScheme * hi GitSignsDelete ctermbg=NONE guibg=NONE")
+-- vim.cmd("autocmd ColorScheme * hi NvimTreeNormal ctermbg=NONE guibg=NONE")
+-- vim.cmd("autocmd ColorScheme * hi NvimTreeNormalNC ctermbg=NONE guibg=NONE")
 --
 
 -- backspace
