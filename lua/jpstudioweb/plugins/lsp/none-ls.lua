@@ -19,8 +19,6 @@ return {
         "black", -- python formatter
         "flake8", -- python linter
         "eslint_d", -- js linter
-        "rubocop", -- ruby linter
-        "rubyfmt", -- ruby formatter
       },
     })
 
@@ -51,14 +49,6 @@ return {
             return utils.root_has_file({ ".eslintrc.js", ".eslintrc.cjs" }) -- only enable if root has .eslintrc.js or .eslintrc.cjs
           end,
         }),
-        diagnostics.rubocop.with({
-          command = "rubocop",
-          args = { "--format", "json", "--force-exclusion", "--stdin", "$FILENAME" },
-          format = "json",
-          to_stdin = true,
-        }),
-        formatting.rubyfmt.with({}),
-      },
       -- configure format on save
       on_attach = function(current_client, bufnr)
         if current_client.supports_method("textDocument/formatting") then

@@ -176,46 +176,6 @@ return {
       },
     })
 
-    -- configure ruby server
-    lspconfig["ruby_ls"].setup({
-      on_attach = on_attach,
-      capabilities = capabilities,
-    })
-
-    lspconfig["sorbet"].setup({
-      cmd = { "bundle", "exec", "srb", "typecheck", "--lsp" },
-      on_attach = on_attach,
-      capabilities = capabilities,
-      root_dir = function(fname)
-        return lspconfig.util.find_git_ancestor(fname) or vim.fn.getcwd()
-      end,
-      -- Você pode adicionar mais opções de configuração aqui, se necessário
-    })
-
-    lspconfig["solargraph"].setup({
-      capabilities = capabilities,
-      on_attach = on_attach,
-      settings = {
-        solargraph = {
-          diagnostics = false,
-          commandPath = "/home/jpstudioweb/.rbenv/shims/solargraph",
-          useBundler = {
-            "bundle",
-            "exec",
-          },
-          completion = true,
-          hover = false,
-          formatting = false,
-          autoformat = false,
-          symbols = false,
-          definitions = false,
-          rename = false,
-          references = false,
-          folding = false,
-        },
-      },
-    })
-
     -- configure markdown server
     lspconfig["marksman"].setup({
       capabilities = capabilities,
