@@ -16,8 +16,7 @@ return {
       ensure_installed = {
         "prettier", -- prettier formatter
         "stylua", -- lua formatter
-        "black", -- python formatter
-        "flake8", -- python linter
+        "ruff", -- python formatter
         "eslint_d", -- js linter
       },
     })
@@ -42,8 +41,8 @@ return {
         }), -- js/ts formatter
         formatting.stylua, -- lua formatter
         -- formatting.isort,
-        formatting.black,
-        diagnostics.flake8,
+        formatting.ruff,
+        diagnostics.ruff,
         diagnostics.eslint_d.with({ -- js/ts linter
           condition = function(utils)
             return utils.root_has_file({ ".eslintrc.js", ".eslintrc.cjs" }) -- only enable if root has .eslintrc.js or .eslintrc.cjs
