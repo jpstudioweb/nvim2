@@ -48,19 +48,18 @@ opt.cursorline = true -- highlight the current cursor line
 opt.termguicolors = true
 opt.background = "dark" -- colorschemes that can be light or dark will be made dark
 opt.signcolumn = "yes" -- show sign column so that text doesn't shift
--- vim.cmd("autocmd ColorScheme * hi Normal ctermbg=NONE guibg=NONE")
--- vim.cmd("autocmd ColorScheme * hi SignColumn ctermbg=NONE guibg=NONE")
--- vim.cmd("autocmd ColorScheme * hi LineNr ctermbg=NONE guibg=NONE")
--- vim.cmd("autocmd ColorScheme * hi DiagnosticSignError ctermbg=NONE guibg=NONE")
--- vim.cmd("autocmd ColorScheme * hi DiagnosticSignWarning ctermbg=NONE guibg=NONE")
--- vim.cmd("autocmd ColorScheme * hi DiagnosticSignInformation ctermbg=NONE guibg=NONE")
--- vim.cmd("autocmd ColorScheme * hi DiagnosticSignHint ctermbg=NONE guibg=NONE")
--- vim.cmd("autocmd ColorScheme * hi GitSignsAdd ctermbg=NONE guibg=NONE")
--- vim.cmd("autocmd ColorScheme * hi GitSignsChange ctermbg=NONE guibg=NONE")
--- vim.cmd("autocmd ColorScheme * hi GitSignsDelete ctermbg=NONE guibg=NONE")
+vim.cmd("autocmd ColorScheme * hi Normal ctermbg=NONE guibg=NONE")
+vim.cmd("autocmd ColorScheme * hi SignColumn ctermbg=NONE guibg=NONE")
+vim.cmd("autocmd ColorScheme * hi LineNr ctermbg=NONE guibg=NONE")
+vim.cmd("autocmd ColorScheme * hi DiagnosticSignError ctermbg=NONE guibg=NONE")
+vim.cmd("autocmd ColorScheme * hi DiagnosticSignWarning ctermbg=NONE guibg=NONE")
+vim.cmd("autocmd ColorScheme * hi DiagnosticSignInformation ctermbg=NONE guibg=NONE")
+vim.cmd("autocmd ColorScheme * hi DiagnosticSignHint ctermbg=NONE guibg=NONE")
+vim.cmd("autocmd ColorScheme * hi GitSignsAdd ctermbg=NONE guibg=NONE")
+vim.cmd("autocmd ColorScheme * hi GitSignsChange ctermbg=NONE guibg=NONE")
+vim.cmd("autocmd ColorScheme * hi GitSignsDelete ctermbg=NONE guibg=NONE")
 -- vim.cmd("autocmd ColorScheme * hi NvimTreeNormal ctermbg=NONE guibg=NONE")
 -- vim.cmd("autocmd ColorScheme * hi NvimTreeNormalNC ctermbg=NONE guibg=NONE")
---
 
 -- backspace
 opt.backspace = "indent,eol,start" -- allow backspace on indent, end of line or insert mode start position
