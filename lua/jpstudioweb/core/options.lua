@@ -72,7 +72,7 @@ opt.splitbelow = true -- split horizontal window to the bottom
 -- turn off swapfile
 opt.swapfile = false
 
--- background trasnparency
+-- background transparency
 -- vim.cmd("autocmd ColorScheme * hi Normal ctermbg=NONE guibg=NONE")
 
 -- Ecoding: UTF-8
