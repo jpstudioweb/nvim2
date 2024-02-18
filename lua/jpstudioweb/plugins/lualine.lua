@@ -3,24 +3,24 @@ return {
   config = function()
     local lualine = require("lualine")
 
-    -- Cores do tema Nord
+    -- Cores do tema Tokyo Night
     local colors = {
-      bg = "#3B4252", -- Nord1: used for background
-      fg = "#E5E9F0", -- Nord5: used for main foreground, caret, delimiters and operators
-      yellow = "#EBCB8B", -- Nord13: used for annotations
-      cyan = "#8FBCBB", -- Nord7: lighter cyan compared to Nord8
-      darkblue = "#5E81AC", -- Nord10: used for classes, documentation and types
-      green = "#A3BE8C", -- Nord14: used for strings and inserted text
-      orange = "#D08770", -- Nord12: used for constants and character literals
-      violet = "#B48EAD", -- Nord15: used for numbers and literals
-      magenta = "#B48EAD", -- Nord15: used for numbers and literals
-      normal_blue = "#81A1C1", -- Nord9: used for variable names and function calls
+      bg = "#1a1b26", -- Background: escuro
+      fg = "#c0caf5", -- Foreground: claro
+      yellow = "#e0af68", -- Amarelo
+      cyan = "#7dcfff", -- Ciano
+      darkblue = "#7aa2f7", -- Azul escuro
+      green = "#9ece6a", -- Verde
+      orange = "#ff9e64", -- Laranja
+      violet = "#bb9af7", -- Violeta
+      magenta = "#f7768e", -- Magenta
+      normal_blue = "#7aa2f7", -- Azul normal
     }
 
-    -- Definição do tema para lualine baseado no Nord
-    local nord_theme = {
+    -- Definição do tema para lualine baseado no Tokyo Night
+    local tokyonight_theme = {
       normal = {
-        a = { bg = colors.normal_blue, fg = colors.bg, gui = "bold" }, -- Using normal_blue for the normal mode bar
+        a = { bg = colors.normal_blue, fg = colors.bg, gui = "bold" },
         b = { bg = colors.bg, fg = colors.fg },
         c = { bg = colors.bg, fg = colors.fg },
       },
@@ -47,10 +47,10 @@ return {
       },
     }
 
-    -- Configuração do lualine com o tema Nord
+    -- Configuração do lualine com o tema Tokyo Night
     lualine.setup({
       options = {
-        theme = nord_theme,
+        theme = tokyonight_theme,
         -- outras opções ...
         component_separators = { left = "", right = "" },
         section_separators = { left = "", right = "" },
