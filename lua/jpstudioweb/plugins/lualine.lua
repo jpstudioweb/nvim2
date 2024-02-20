@@ -3,29 +3,29 @@ return {
   config = function()
     local lualine = require("lualine")
 
-    -- Cores do tema Tokyo Night
+    -- Cores do tema Dracula
     local colors = {
-      bg = "#1a1b26", -- Background: escuro
-      fg = "#c0caf5", -- Foreground: claro
-      yellow = "#e0af68", -- Amarelo
-      cyan = "#7dcfff", -- Ciano
-      darkblue = "#7aa2f7", -- Azul escuro
-      green = "#9ece6a", -- Verde
-      orange = "#ff9e64", -- Laranja
-      violet = "#bb9af7", -- Violeta
-      magenta = "#f7768e", -- Magenta
-      normal_blue = "#7aa2f7", -- Azul normal
+      bg = "#282a36", -- Background: escuro
+      fg = "#f8f8f2", -- Foreground: claro
+      yellow = "#f1fa8c", -- Amarelo
+      cyan = "#8be9fd", -- Ciano
+      darkblue = "#6272a4", -- Azul escuro
+      green = "#50fa7b", -- Verde
+      orange = "#ffb86c", -- Laranja
+      violet = "#bd93f9", -- Violeta
+      magenta = "#ff79c6", -- Magenta
+      red = "#ff5555", -- Vermelho
     }
 
-    -- Definição do tema para lualine baseado no Tokyo Night
-    local tokyonight_theme = {
+    -- Definição do tema para lualine baseado no Dracula
+    local dracula_theme = {
       normal = {
-        a = { bg = colors.normal_blue, fg = colors.bg, gui = "bold" },
+        a = { bg = colors.darkblue, fg = colors.bg, gui = "bold" },
         b = { bg = colors.bg, fg = colors.fg },
         c = { bg = colors.bg, fg = colors.fg },
       },
       insert = {
-        a = { bg = colors.darkblue, fg = colors.bg, gui = "bold" },
+        a = { bg = colors.cyan, fg = colors.bg, gui = "bold" },
         b = { bg = colors.bg, fg = colors.fg },
       },
       visual = {
@@ -33,11 +33,11 @@ return {
         b = { bg = colors.bg, fg = colors.fg },
       },
       replace = {
-        a = { bg = colors.orange, fg = colors.bg, gui = "bold" },
+        a = { bg = colors.red, fg = colors.bg, gui = "bold" },
         b = { bg = colors.bg, fg = colors.fg },
       },
       command = {
-        a = { bg = colors.yellow, fg = colors.bg, gui = "bold" },
+        a = { bg = colors.orange, fg = colors.bg, gui = "bold" },
         b = { bg = colors.bg, fg = colors.fg },
       },
       inactive = {
@@ -47,11 +47,10 @@ return {
       },
     }
 
-    -- Configuração do lualine com o tema Tokyo Night
+    -- Configuração do lualine com o tema Dracula
     lualine.setup({
       options = {
-        theme = tokyonight_theme,
-        -- outras opções ...
+        theme = dracula_theme,
         component_separators = { left = "", right = "" },
         section_separators = { left = "", right = "" },
       },
