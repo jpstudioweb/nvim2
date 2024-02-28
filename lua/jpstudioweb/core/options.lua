@@ -83,3 +83,4 @@ opt.encoding = "UTF-8"
 --   pattern = "*.py",
 --   command = "!triple-quote %",
 -- })
+opt.foldenable = false
