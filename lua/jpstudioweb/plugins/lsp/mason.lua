@@ -31,7 +31,6 @@ return {
         "html",
         "cssls",
         "tailwindcss",
-        "svelte",
         "lua_ls",
         "graphql",
         "emmet_ls",
@@ -47,7 +46,8 @@ return {
         "prettier", -- prettier formatter
         "stylua", -- lua formatter
         "isort", -- python formatter
-        "ruff", -- python formatter
+        "black", -- python formatter
+        "flake8", -- python linter
         "eslint_d", -- js linter
       },
     })
