@@ -24,6 +24,10 @@ return {
     -- import nvim-cmp plugin (completions plugin)
     local cmp = require("cmp")
 
+    -- Adiciona a regra para Django template tags {% %}
+    local Rule = require("nvim-autopairs.rule")
+    autopairs.add_rule(Rule("{%", "%", "htmldjango"))
+
     -- make autopairs and completion work together
     cmp.event:on("confirm_done", function(e)
       if e.completed_item and (e.completed_item.kind ~= "Function" and e.completed_item.kind ~= "Method") then
