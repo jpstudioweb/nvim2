@@ -48,6 +48,7 @@ return {
         "isort", -- python formatter
         "black", -- python formatter
         "flake8", -- python linter
+        "djlint", -- django linter and formatter
         "eslint_d", -- js linter
       },
     })
