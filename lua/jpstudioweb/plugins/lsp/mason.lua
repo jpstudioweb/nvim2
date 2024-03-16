@@ -46,7 +46,7 @@ return {
         "prettier", -- prettier formatter
         "stylua", -- lua formatter
         "isort", -- python formatter
-        "black", -- python formatter
+        "ruff", -- python formatter
         "flake8", -- python linter
         "djlint", -- django linter and formatter
         "eslint_d", -- js linter

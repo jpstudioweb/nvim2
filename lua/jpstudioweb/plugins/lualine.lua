@@ -3,29 +3,28 @@ return {
   config = function()
     local lualine = require("lualine")
 
-    -- Cores do tema Dracula
+    -- Cores do tema PaperColor Light
     local colors = {
-      bg = "#282a36", -- Background: escuro
-      fg = "#f8f8f2", -- Foreground: claro
-      yellow = "#f1fa8c", -- Amarelo
-      cyan = "#8be9fd", -- Ciano
-      darkblue = "#6272a4", -- Azul escuro
-      green = "#50fa7b", -- Verde
-      orange = "#ffb86c", -- Laranja
-      violet = "#bd93f9", -- Violeta
-      magenta = "#ff79c6", -- Magenta
-      red = "#ff5555", -- Vermelho
+      bg = "#eeeeee", -- Background: claro
+      fg = "#444444", -- Foreground: escuro
+      blue = "#af87d7", -- Azul
+      green = "#87af87", -- Verde
+      orange = "#ffaf00", -- Laranja
+      violet = "#8787af", -- Violeta
+      magenta = "#af87af", -- Magenta
+      red = "#d78787", -- Vermelho
+      yellow = "#ffd787", -- Amarelo
     }
 
-    -- Definição do tema para lualine baseado no Dracula
-    local dracula_theme = {
+    -- Definição do tema para lualine baseado no PaperColor Light
+    local papercolor_theme = {
       normal = {
-        a = { bg = colors.darkblue, fg = colors.bg, gui = "bold" },
+        a = { bg = colors.blue, fg = colors.bg, gui = "bold" },
         b = { bg = colors.bg, fg = colors.fg },
         c = { bg = colors.bg, fg = colors.fg },
       },
       insert = {
-        a = { bg = colors.cyan, fg = colors.bg, gui = "bold" },
+        a = { bg = colors.green, fg = colors.bg, gui = "bold" },
         b = { bg = colors.bg, fg = colors.fg },
       },
       visual = {
@@ -47,10 +46,10 @@ return {
       },
     }
 
-    -- Configuração do lualine com o tema Dracula
+    -- Configuração do lualine com o tema PaperColor Light
     lualine.setup({
       options = {
-        theme = dracula_theme,
+        theme = papercolor_theme,
         component_separators = { left = "", right = "" },
         section_separators = { left = "", right = "" },
       },
