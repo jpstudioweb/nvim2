@@ -13,11 +13,11 @@ return {
       highlight NotifyBackground guibg=#ecf5ff
 
       " Ajustar a cor do título para algo mais legível, seguindo o esquema Xcode Light
-      highlight NotifyINFOTitle guifg=#23575c guibg=#ecf5ff
-      highlight NotifyWARNTitle guifg=#ffaf00 guibg=#ecf5ff
-      highlight NotifyERRORTitle guifg=#d12f1b guibg=#ecf5ff
-      highlight NotifyDEBUGTitle guifg=#5c6873 guibg=#ecf5ff
-      highlight NotifyTRACETitle guifg=#8a99a6 guibg=#ecf5ff
+      highlight NotifyINFOTitle guifg=#23575c guibg=#ffffff
+      highlight NotifyWARNTitle guifg=#ffaf00 guibg=#ffffff
+      highlight NotifyERRORTitle guifg=#d12f1b guibg=#ffffff
+      highlight NotifyDEBUGTitle guifg=#5c6873 guibg=#ffffff
+      highlight NotifyTRACETitle guifg=#8a99a6 guibg=#ffffff
 
       " Ajuste adicional para o corpo da mensagem, mantendo a legibilidade com o tema claro
       highlight NotifyINFOBody guifg=#262626 guibg=#ffffff
