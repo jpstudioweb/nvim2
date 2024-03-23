@@ -3,21 +3,21 @@ return {
   config = function()
     local lualine = require("lualine")
 
-    -- Cores do tema PaperColor Light
+    -- Cores ajustadas para corresponder ao tema Xcode Light
     local colors = {
-      bg = "#eeeeee", -- Background: claro
-      fg = "#444444", -- Foreground: escuro
-      blue = "#af87d7", -- Azul
-      green = "#87af87", -- Verde
-      orange = "#ffaf00", -- Laranja
-      violet = "#8787af", -- Violeta
-      magenta = "#af87af", -- Magenta
-      red = "#d78787", -- Vermelho
-      yellow = "#ffd787", -- Amarelo
+      bg = "#ffffff", -- Background geral: branco
+      fg = "#262626", -- Foreground: escuro para contraste
+      blue = "#0f68a0", -- Cor mais próxima do Xcode Light para azul
+      green = "#3e8087", -- Verde ajustado para Xcode Light
+      orange = "#ffaf00", -- Mantém a cor laranja (não especificada no Xcode Light, mantida para diversidade)
+      violet = "#ad3da4", -- Violeta do Xcode Light
+      magenta = "#804fb8", -- Magenta ajustado para Xcode Light
+      red = "#d12f1b", -- Vermelho do Xcode Light
+      yellow = "#ffd787", -- Amarelo ajustado, mantido do seu tema (não especificado no Xcode Light)
     }
 
-    -- Definição do tema para lualine baseado no PaperColor Light
-    local papercolor_theme = {
+    -- Definição do tema para lualine baseado nas cores do Xcode Light
+    local xcodelight = {
       normal = {
         a = { bg = colors.blue, fg = colors.bg, gui = "bold" },
         b = { bg = colors.bg, fg = colors.fg },
@@ -46,10 +46,10 @@ return {
       },
     }
 
-    -- Configuração do lualine com o tema PaperColor Light
+    -- Configuração do lualine com o tema Xcode Light ajustado
     lualine.setup({
       options = {
-        theme = papercolor_theme,
+        theme = xcodelight,
         component_separators = { left = "", right = "" },
         section_separators = { left = "", right = "" },
       },

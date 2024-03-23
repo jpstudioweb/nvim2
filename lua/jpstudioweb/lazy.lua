@@ -13,7 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({ { import = "jpstudioweb.plugins" }, { import = "jpstudioweb.plugins.lsp" } }, {
   install = {
-    colorscheme = { "PaperColor" },
+    colorscheme = { "xcodelight" },
   },
   checker = {
     enabled = true,

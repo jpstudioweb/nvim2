@@ -1,11 +1,11 @@
 return {
   {
-    "NLKNguyen/papercolor-theme",
-    as = "PaperColor",
+    "arzg/vim-colors-xcode",
+    as = "xcodelight",
     priority = 1000, -- make sure to load this before all the other start plugins
     config = function()
       -- load the colorscheme here
-      vim.cmd([[colorscheme PaperColor]])
+      vim.cmd([[colorscheme xcodelight]])
     end,
   },
 }
