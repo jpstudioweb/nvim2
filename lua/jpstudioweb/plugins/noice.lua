@@ -10,14 +10,6 @@ return {
     config = function()
       local noice = require("noice")
       noice.setup({
-        highlights = {
-          NotifyERRORBorder = { bg = "#d12f1b", fg = "#b4d8fd" }, -- Vermelho claro para erros, com fundo azul suave
-          NotifyWARNBorder = { bg = "#ffd787", fg = "#0f68a0" }, -- Amarelo claro para avisos, com fundo azul
-          NotifyINFOBorder = { bg = "#ecf5ff", fg = "#23575c" }, -- Azul claro para informações, com fundo teal
-          NotifyDEBUGBorder = { bg = "#eeeeee", fg = "#5c6873" }, -- Cinza muito claro para debug, com texto em cinza médio
-          NotifyTRACEBorder = { bg = "#eeeeee", fg = "#5c6873" }, -- Mesma configuração de Debug para Trace para consistência
-          -- Adicione mais customizações conforme necessário
-        },
         cmdline = {
           enable = true,
           view = "cmdline_popup",
