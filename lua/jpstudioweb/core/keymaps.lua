@@ -17,6 +17,9 @@ keymap.set(
   { desc = "Clear all search highlights in the buffer, enhancing readability" }
 )
 
+-- close the file
+keymap.set("n", "<leader>q", ":q<CR>", { desc = "Close the file" })
+
 -- execute python code
 keymap.set(
   "n",
