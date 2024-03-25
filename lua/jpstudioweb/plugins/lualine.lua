@@ -3,28 +3,29 @@ return {
   config = function()
     local lualine = require("lualine")
 
-    -- Cores ajustadas para corresponder ao tema Xcode Light
+    -- Cores do tema Dracula
     local colors = {
-      bg = "#ffffff", -- Background geral: branco
-      fg = "#262626", -- Foreground: escuro para contraste
-      blue = "#0f68a0", -- Cor mais próxima do Xcode Light para azul
-      green = "#3e8087", -- Verde ajustado para Xcode Light
-      orange = "#ffaf00", -- Mantém a cor laranja (não especificada no Xcode Light, mantida para diversidade)
-      violet = "#ad3da4", -- Violeta do Xcode Light
-      magenta = "#804fb8", -- Magenta ajustado para Xcode Light
-      red = "#d12f1b", -- Vermelho do Xcode Light
-      yellow = "#ffd787", -- Amarelo ajustado, mantido do seu tema (não especificado no Xcode Light)
+      bg = "#282a36", -- Background: escuro
+      fg = "#f8f8f2", -- Foreground: claro
+      yellow = "#f1fa8c", -- Amarelo
+      cyan = "#8be9fd", -- Ciano
+      darkblue = "#6272a4", -- Azul escuro
+      green = "#50fa7b", -- Verde
+      orange = "#ffb86c", -- Laranja
+      violet = "#bd93f9", -- Violeta
+      magenta = "#ff79c6", -- Magenta
+      red = "#ff5555", -- Vermelho
     }
 
-    -- Definição do tema para lualine baseado nas cores do Xcode Light
-    local xcodelight = {
+    -- Definição do tema para lualine baseado no Dracula
+    local dracula_theme = {
       normal = {
-        a = { bg = colors.blue, fg = colors.bg, gui = "bold" },
+        a = { bg = colors.darkblue, fg = colors.bg, gui = "bold" },
         b = { bg = colors.bg, fg = colors.fg },
         c = { bg = colors.bg, fg = colors.fg },
       },
       insert = {
-        a = { bg = colors.green, fg = colors.bg, gui = "bold" },
+        a = { bg = colors.cyan, fg = colors.bg, gui = "bold" },
         b = { bg = colors.bg, fg = colors.fg },
       },
       visual = {
@@ -46,10 +47,10 @@ return {
       },
     }
 
-    -- Configuração do lualine com o tema Xcode Light ajustado
+    -- Configuração do lualine com o tema Dracula
     lualine.setup({
       options = {
-        theme = xcodelight,
+        theme = dracula_theme,
         component_separators = { left = "", right = "" },
         section_separators = { left = "", right = "" },
       },

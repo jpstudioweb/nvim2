@@ -1,11 +1,11 @@
 return {
   {
-    "arzg/vim-colors-xcode",
-    as = "xcodelight",
+    "dracula/vim",
+    as = "dracula",
     priority = 1000, -- make sure to load this before all the other start plugins
     config = function()
       -- load the colorscheme here
-      vim.cmd([[colorscheme xcodelight]])
+      vim.cmd([[colorscheme dracula]])
     end,
   },
 }
