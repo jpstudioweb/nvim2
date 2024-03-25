@@ -7,12 +7,13 @@ return {
     vim.g.loaded_netrw = 1
     vim.g.loaded_netrwPlugin = 1
 
-    -- change color for arrows in tree
-    vim.cmd([[ highlight NvimTreeFolderArrowClosed guifg=#5c6873 ]])
-    vim.cmd([[ highlight NvimTreeFolderArrowOpen guifg=#5c6873 ]])
-    vim.cmd([[ highlight NvimTreeNormal guibg=#ffffff ]])
-    vim.cmd([[ highlight NvimTreeNormalNC guibg=#ffffff ]])
+    -- Mudança de cor para as setas de pastas fechadas e abertas no NvimTree para o tema Dracula
+    vim.cmd([[ highlight NvimTreeFolderArrowClosed guifg=#ff79c6 ]]) -- Cor rosa para setas de pastas fechadas
+    vim.cmd([[ highlight NvimTreeFolderArrowOpen guifg=#ff79c6 ]]) -- Cor rosa para setas de pastas abertas
 
+    -- Mudança de cor de fundo do NvimTree para corresponder ao fundo escuro do tema Dracula
+    vim.cmd([[ highlight NvimTreeNormal guibg=#282a36 ]]) -- Fundo escuro do Dracula
+    vim.cmd([[ highlight NvimTreeNormalNC guibg=#282a36 ]]) -- Fundo escuro do Dracula para o NvimTree quando não está em foco
     nvimtree.setup({
       view = {
         width = 35,
