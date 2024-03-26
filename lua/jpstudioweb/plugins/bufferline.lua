@@ -14,31 +14,32 @@ return {
     highlights = {
       fill = {
         ctermbg = "0",
-        bg = "#ffffff", -- Fundo geral, claro no xcodelight
+        bg = "#282A36", -- Fundo geral do Dracula
       },
       background = {
-        fg = "#8a99a6", -- Cor do texto inativo, seguindo o comentário xcodelight
-        bg = "#ffffff", -- Fundo dos itens inativos
+        fg = "#6272A4", -- Cor do texto inativo no Dracula
+        bg = "#282A36", -- Fundo dos itens inativos no Dracula
       },
       buffer_selected = {
-        fg = "#262626", -- Cor do texto selecionado, preto para melhor contraste
-        bg = "#ecf5ff", -- Fundo do item selecionado, azul claro suave para destacar
+        fg = "#F8F8F2", -- Cor do texto selecionado no Dracula
+        bg = "#44475A", -- Fundo do item selecionado no Dracula
         bold = true,
       },
       buffer_visible = {
-        fg = "#8a99a6", -- Cor do texto visível, mas não selecionado
-        bg = "#ffffff", -- Fundo dos itens visíveis
+        fg = "#6272A4", -- Cor do texto visível, mas não selecionado no Dracula
+        bg = "#282A36", -- Fundo dos itens visíveis no Dracula
       },
       separator = {
-        fg = "#cdcdcd", -- Cor do separador, cinza claro
-        bg = "#ffffff", -- Fundo do separador, branco para uniformidade
+        fg = "#6272A4", -- Cor do separador no Dracula
+        bg = "#282A36", -- Fundo do separador no Dracula
       },
       separator_selected = {
-        fg = "#cdcdcd", -- Cor do separador selecionado, cinza claro para uniformidade
+        fg = "#6272A4", -- Cor do separador selecionado no Dracula
+        bg = "#44475A", -- Fundo do separador selecionado no Dracula
       },
       separator_visible = {
-        fg = "#cdcdcd", -- Cor do separador visível, mas não selecionado
-        bg = "#ffffff", -- Fundo do separador visível, branco para uniformidade
+        fg = "#6272A4", -- Cor do separador visível, mas não selecionado no Dracula
+        bg = "#282A36", -- Fundo do separador visível no Dracula
       },
       -- Outros destaques podem ser adicionados seguindo o mesmo padrão
     },

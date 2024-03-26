@@ -58,6 +58,8 @@ opt.signcolumn = "yes" -- show sign column so that text doesn't shift
 -- vim.cmd("autocmd ColorScheme * hi GitSignsAdd ctermbg=NONE guibg=NONE")
 -- vim.cmd("autocmd ColorScheme * hi GitSignsChange ctermbg=NONE guibg=NONE")
 -- vim.cmd("autocmd ColorScheme * hi GitSignsDelete ctermbg=NONE guibg=NONE")
+vim.cmd("autocmd ColorScheme * highlight NormalFloat guibg=#282A36")
+vim.cmd("autocmd ColorScheme * highlight FloatBorder guifg=white guibg=#282A36")
 
 -- backspace
 opt.backspace = "indent,eol,start" -- allow backspace on indent, end of line or insert mode start position
