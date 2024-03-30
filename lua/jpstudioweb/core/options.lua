@@ -39,7 +39,7 @@ opt.hlsearch = true
 opt.showmatch = true
 
 -- cursor line
-opt.cursorline = true -- highlight the current cursor line
+opt.cursorline = false -- highlight the current cursor line
 
 -- appearance
 
@@ -75,7 +75,7 @@ opt.splitbelow = true -- split horizontal window to the bottom
 opt.swapfile = false
 
 -- background transparency
--- vim.cmd("autocmd ColorScheme * hi Normal ctermbg=NONE guibg=NONE")
+vim.cmd("autocmd ColorScheme * hi Normal ctermbg=NONE guibg=NONE")
 
 -- Ecoding: UTF-8
 opt.encoding = "UTF-8"
