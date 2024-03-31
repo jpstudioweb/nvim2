@@ -18,7 +18,7 @@ return {
         markdown = { "prettier" },
         graphql = { "prettier" },
         lua = { "stylua" },
-        python = { "isort", "ruff" },
+        python = { "isort", "black" },
         -- htmldjango = { "djlint" },
       },
       format_on_save = {

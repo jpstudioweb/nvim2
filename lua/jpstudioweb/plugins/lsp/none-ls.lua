@@ -16,7 +16,7 @@ return {
       ensure_installed = {
         "prettier", -- prettier formatter
         "stylua", -- lua formatter
-        "ruff", -- python formatter
+        "black", -- python formatter
         "eslint_d", -- js linter
       },
     })
@@ -39,7 +39,7 @@ return {
         formatting.prettierth, -- js/ts formatter
         formatting.stylua, -- lua formatter
         -- formatting.isort,
-        formatting.ruff,
+        formatting.black,
         -- formatting.djlint, -- formatter htmldjango
         diagnostics.flake8, -- linter python
         diagnostics.djlint, -- linter django
