@@ -51,6 +51,7 @@ return {
         "djlint", -- django linter and formatter
         "eslint_d", -- js linter
         "rubocop", -- ruby linter and formatter
+        "htmlbeautifier", -- erb formatter
       },
     })
   end,

@@ -21,6 +21,7 @@ return {
         python = { "isort", "black" },
         -- htmldjango = { "djlint" },
         ruby = { "rubocop" },
+        eruby = { "htmlbeautifier" },
       },
       format_on_save = {
         lsp_fallback = true,
