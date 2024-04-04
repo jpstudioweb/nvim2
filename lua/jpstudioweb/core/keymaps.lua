@@ -24,8 +24,8 @@ keymap.set("n", "<leader>q", ":q<CR>", { desc = "Close the file" })
 keymap.set(
   "n",
   "<leader>b",
-  ":! python %<CR>",
-  { desc = "Run the current Python script. Shortcut for quick testing and execution" }
+  ":! ruby %<CR>",
+  { desc = "Run the current ruby script. Shortcut for quick testing and execution" }
 )
 
 -- Save allopen files

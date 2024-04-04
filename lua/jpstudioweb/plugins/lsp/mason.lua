@@ -34,6 +34,8 @@ return {
         "lua_ls",
         "emmet_ls",
         "pyright",
+        "ruby_ls",
+        "solargraph",
       },
       -- auto-install configured servers (with lspconfig)
       automatic_installation = true, -- not the same as ensure_installed
@@ -48,6 +50,7 @@ return {
         "flake8", -- python linter
         "djlint", -- django linter and formatter
         "eslint_d", -- js linter
+        "rubocop", -- ruby linter and formatter
       },
     })
   end,

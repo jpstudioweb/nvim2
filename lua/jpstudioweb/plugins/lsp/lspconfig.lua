@@ -125,6 +125,36 @@ return {
       on_attach = on_attach,
     })
 
+    -- configure ruby server
+    lspconfig["ruby_ls"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
+
+    lspconfig["solargraph"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+      settings = {
+        solargraph = {
+          diagnostics = false,
+          commandPath = "/home/jpstudioweb/.rbenv/shims/solargraph",
+          useBundler = {
+            "bundle",
+            "exec",
+          },
+          completion = true,
+          hover = false,
+          formatting = false,
+          autoformat = false,
+          symbols = false,
+          definitions = false,
+          rename = false,
+          references = false,
+          folding = false,
+        },
+      },
+    })
+
     -- configure lua server (with special settings)
     lspconfig["lua_ls"].setup({
       capabilities = capabilities,

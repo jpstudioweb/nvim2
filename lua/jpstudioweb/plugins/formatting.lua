@@ -20,6 +20,7 @@ return {
         lua = { "stylua" },
         python = { "isort", "black" },
         -- htmldjango = { "djlint" },
+        ruby = { "rubocop" },
       },
       format_on_save = {
         lsp_fallback = true,

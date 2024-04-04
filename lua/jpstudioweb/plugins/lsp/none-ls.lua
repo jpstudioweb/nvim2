@@ -43,6 +43,8 @@ return {
         -- formatting.djlint, -- formatter htmldjango
         diagnostics.flake8, -- linter python
         diagnostics.djlint, -- linter django
+        diagnostics.rubocop, -- linter ruby
+        formatting.rubocop, -- formatter ruby
         diagnostics.eslint_d.with({ -- js/ts linter
           condition = function(utils)
             return utils.root_has_file({ ".eslintrc.js", ".eslintrc.cjs" }) -- only enable if root has .eslintrc.js or .eslintrc.cjs
