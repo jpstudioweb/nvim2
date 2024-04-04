@@ -14,32 +14,32 @@ return {
     highlights = {
       fill = {
         ctermbg = "0",
-        bg = "#1A1B26", -- Fundo geral do TokyoNight
+        bg = "#fbf1c7", -- Fundo geral do Gruvbox Light
       },
       background = {
-        fg = "#565F89", -- Cor do texto inativo no TokyoNight
-        bg = "#1A1B26", -- Fundo dos itens inativos no TokyoNight
+        fg = "#7c6f64", -- Cor do texto inativo no Gruvbox Light
+        bg = "#fbf1c7", -- Fundo dos itens inativos no Gruvbox Light
       },
       buffer_selected = {
-        fg = "#c0caf5", -- Cor do texto selecionado no TokyoNight
-        bg = "#2a2e36", -- Fundo do item selecionado no TokyoNight
+        fg = "#3c3836", -- Cor do texto selecionado no Gruvbox Light
+        bg = "#ebdbb2", -- Fundo do item selecionado no Gruvbox Light
         bold = true,
       },
       buffer_visible = {
-        fg = "#565F89", -- Cor do texto visível, mas não selecionado no TokyoNight
-        bg = "#1A1B26", -- Fundo dos itens visíveis no TokyoNight
+        fg = "#7c6f64", -- Cor do texto visível, mas não selecionado no Gruvbox Light
+        bg = "#fbf1c7", -- Fundo dos itens visíveis no Gruvbox Light
       },
       separator = {
-        fg = "#565F89", -- Cor do separador no TokyoNight
-        bg = "#1A1B26", -- Fundo do separador no TokyoNight
+        fg = "#7c6f64", -- Cor do separador no Gruvbox Light
+        bg = "#fbf1c7", -- Fundo do separador no Gruvbox Light
       },
       separator_selected = {
-        fg = "#565F89", -- Cor do separador selecionado no TokyoNight
-        bg = "#2a2e36", -- Fundo do separador selecionado no TokyoNight
+        fg = "#7c6f64", -- Cor do separador selecionado no Gruvbox Light
+        bg = "#ebdbb2", -- Fundo do separador selecionado no Gruvbox Light
       },
       separator_visible = {
-        fg = "#565F89", -- Cor do separador visível, mas não selecionado no TokyoNight
-        bg = "#1A1B26", -- Fundo do separador visível no TokyoNight
+        fg = "#7c6f64", -- Cor do separador visível, mas não selecionado no Gruvbox Light
+        bg = "#fbf1c7", -- Fundo do separador visível no Gruvbox Light
       },
       -- Outros destaques podem ser adicionados seguindo o mesmo padrão
     },
