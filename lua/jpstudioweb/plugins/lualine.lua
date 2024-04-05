@@ -3,10 +3,10 @@ return {
   config = function()
     local lualine = require("lualine")
 
-    -- Cores do tema Gruvbox Light
+    -- Cores do tema Gruvbox Dark
     local colors = {
-      bg = "#fbf1c7", -- Background: claro
-      fg = "#3c3836", -- Foreground: escuro
+      bg = "#282828", -- Background: escuro
+      fg = "#ebdbb2", -- Foreground: claro
       blue = "#83a598", -- Azul
       cyan = "#8ec07c", -- Ciano
       darkblue = "#458588", -- Azul escuro
@@ -18,8 +18,8 @@ return {
       yellow = "#fabd2f", -- Amarelo
     }
 
-    -- Definição do tema para lualine baseado no Gruvbox Light
-    local gruvbox_light_theme = {
+    -- Definição do tema para lualine baseado no Gruvbox Dark
+    local gruvbox_dark_theme = {
       normal = {
         a = { bg = colors.blue, fg = colors.bg, gui = "bold" },
         b = { bg = colors.bg, fg = colors.fg },
@@ -48,10 +48,10 @@ return {
       },
     }
 
-    -- Configuração do lualine com o tema Gruvbox Light
+    -- Configuração do lualine com o tema Gruvbox Dark
     lualine.setup({
       options = {
-        theme = gruvbox_light_theme,
+        theme = gruvbox_dark_theme,
         component_separators = { left = "", right = "" },
         section_separators = { left = "", right = "" },
       },

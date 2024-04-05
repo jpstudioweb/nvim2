@@ -14,32 +14,32 @@ return {
     highlights = {
       fill = {
         ctermbg = "0",
-        bg = "#fbf1c7", -- Fundo geral do Gruvbox Light
+        bg = "#282828", -- Fundo geral do Gruvbox Dark
       },
       background = {
-        fg = "#7c6f64", -- Cor do texto inativo no Gruvbox Light
-        bg = "#fbf1c7", -- Fundo dos itens inativos no Gruvbox Light
+        fg = "#a89984", -- Cor do texto inativo no Gruvbox Dark
+        bg = "#282828", -- Fundo dos itens inativos no Gruvbox Dark
       },
       buffer_selected = {
-        fg = "#3c3836", -- Cor do texto selecionado no Gruvbox Light
-        bg = "#ebdbb2", -- Fundo do item selecionado no Gruvbox Light
+        fg = "#ebdbb2", -- Cor do texto selecionado no Gruvbox Dark
+        bg = "#3c3836", -- Fundo do item selecionado no Gruvbox Dark
         bold = true,
       },
       buffer_visible = {
-        fg = "#7c6f64", -- Cor do texto visível, mas não selecionado no Gruvbox Light
-        bg = "#fbf1c7", -- Fundo dos itens visíveis no Gruvbox Light
+        fg = "#a89984", -- Cor do texto visível, mas não selecionado no Gruvbox Dark
+        bg = "#282828", -- Fundo dos itens visíveis no Gruvbox Dark
       },
       separator = {
-        fg = "#7c6f64", -- Cor do separador no Gruvbox Light
-        bg = "#fbf1c7", -- Fundo do separador no Gruvbox Light
+        fg = "#a89984", -- Cor do separador no Gruvbox Dark
+        bg = "#282828", -- Fundo do separador no Gruvbox Dark
       },
       separator_selected = {
-        fg = "#7c6f64", -- Cor do separador selecionado no Gruvbox Light
-        bg = "#ebdbb2", -- Fundo do separador selecionado no Gruvbox Light
+        fg = "#a89984", -- Cor do separador selecionado no Gruvbox Dark
+        bg = "#3c3836", -- Fundo do separador selecionado no Gruvbox Dark
       },
       separator_visible = {
-        fg = "#7c6f64", -- Cor do separador visível, mas não selecionado no Gruvbox Light
-        bg = "#fbf1c7", -- Fundo do separador visível no Gruvbox Light
+        fg = "#a89984", -- Cor do separador visível, mas não selecionado no Gruvbox Dark
+        bg = "#282828", -- Fundo do separador visível no Gruvbox Dark
       },
       -- Outros destaques podem ser adicionados seguindo o mesmo padrão
     },

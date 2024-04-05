@@ -46,7 +46,7 @@ opt.cursorline = false -- highlight the current cursor line
 -- turn on termguicolors for gruvbox colorscheme to work
 -- (have to use iterm2 or any other true color terminal)
 opt.termguicolors = true
-opt.background = "light" -- colorschemes that can be light or dark will be made dark
+opt.background = "dark" -- colorschemes that can be light or dark will be made dark
 opt.signcolumn = "yes" -- show sign column so that text doesn't shift
 -- vim.cmd("autocmd ColorScheme * hi Normal ctermbg=NONE guibg=NONE")
 -- vim.cmd("autocmd ColorScheme * hi SignColumn ctermbg=NONE guibg=NONE")
@@ -58,9 +58,8 @@ opt.signcolumn = "yes" -- show sign column so that text doesn't shift
 -- vim.cmd("autocmd ColorScheme * hi GitSignsAdd ctermbg=NONE guibg=NONE")
 -- vim.cmd("autocmd ColorScheme * hi GitSignsChange ctermbg=NONE guibg=NONE")
 -- vim.cmd("autocmd ColorScheme * hi GitSignsDelete ctermbg=NONE guibg=NONE")
-vim.cmd("autocmd ColorScheme * highlight NormalFloat guibg=#ebdbb2")
-vim.cmd("autocmd ColorScheme * highlight FloatBorder guifg=white guibg=#ebdbb2")
-
+vim.cmd("autocmd ColorScheme * highlight NormalFloat guibg=#3c3836")
+vim.cmd("autocmd ColorScheme * highlight FloatBorder guifg=#d5c4a1 guibg=#3c3836")
 -- backspace
 opt.backspace = "indent,eol,start" -- allow backspace on indent, end of line or insert mode start position
 
