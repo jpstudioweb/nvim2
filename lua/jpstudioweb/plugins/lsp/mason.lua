@@ -33,7 +33,6 @@ return {
         "tailwindcss",
         "lua_ls",
         "emmet_ls",
-        "pyright",
         "ruby_ls",
         "solargraph",
       },
@@ -50,7 +49,7 @@ return {
         "flake8", -- python linter
         "djlint", -- django linter and formatter
         "eslint_d", -- js linter
-        "rubocop", -- ruby linter and formatter
+        "rubyfmt", -- ruby formatter
         "htmlbeautifier", -- erb formatter
       },
     })

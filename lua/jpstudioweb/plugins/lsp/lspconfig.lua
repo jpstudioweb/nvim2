@@ -119,12 +119,6 @@ return {
       filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less" },
     })
 
-    -- configure python server
-    lspconfig["pyright"].setup({
-      capabilities = capabilities,
-      on_attach = on_attach,
-    })
-
     -- configure ruby server
     lspconfig["ruby_ls"].setup({
       capabilities = capabilities,

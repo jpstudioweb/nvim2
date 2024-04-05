@@ -16,7 +16,7 @@ return {
       ensure_installed = {
         "prettier", -- prettier formatter
         "stylua", -- lua formatter
-        "black", -- python formatter
+        "rubyfmt", -- ruby formatter
         "eslint_d", -- js linter
       },
     })
@@ -38,13 +38,8 @@ return {
         --  "formatting.prettier.with({disabled_filetypes: {}})" (see null-ls docs)
         formatting.prettierth, -- js/ts formatter
         formatting.stylua, -- lua formatter
-        -- formatting.isort,
-        formatting.black,
-        -- formatting.djlint, -- formatter htmldjango
-        diagnostics.flake8, -- linter python
-        diagnostics.djlint, -- linter django
-        diagnostics.rubocop, -- linter ruby
-        formatting.rubocop, -- formatter ruby
+        -- diagnostics.rubocop, -- linter ruby
+        formatting.rubyfmt, -- formatter ruby
         formatting.htmlbeautifier, -- formatter erb
         diagnostics.eslint_d.with({ -- js/ts linter
           condition = function(utils)
