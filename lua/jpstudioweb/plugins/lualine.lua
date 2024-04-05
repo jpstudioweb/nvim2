@@ -5,7 +5,8 @@ return {
 
     -- Cores do tema Gruvbox Dark
     local colors = {
-      bg = "#282828", -- Background: escuro
+      -- bg = "#282828", -- Background: escuro
+      bg = "none", -- Background: escuro
       fg = "#ebdbb2", -- Foreground: claro
       blue = "#83a598", -- Azul
       cyan = "#8ec07c", -- Ciano
