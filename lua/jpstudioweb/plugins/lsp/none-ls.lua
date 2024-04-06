@@ -14,10 +14,13 @@ return {
 
     mason_null_ls.setup({
       ensure_installed = {
-        "prettier", -- prettier formatter
         "stylua", -- lua formatter
+        "prettier", -- prettier formatter
         "rubyfmt", -- ruby formatter
+        "htmlbeautifier", -- eruby formatter
         "eslint_d", -- js linter
+        "rubocop", -- ruby linter
+        "erb_lint", -- eruby linter
       },
     })
 
@@ -41,6 +44,8 @@ return {
         -- diagnostics.rubocop, -- linter ruby
         formatting.rubyfmt, -- formatter ruby
         formatting.htmlbeautifier, -- formatter erb
+        diagnostics.rubocop, -- ruby linter
+        diagnostics.erb_lint, -- eruby linter
         diagnostics.eslint_d.with({ -- js/ts linter
           condition = function(utils)
             return utils.root_has_file({ ".eslintrc.js", ".eslintrc.cjs" }) -- only enable if root has .eslintrc.js or .eslintrc.cjs

@@ -45,8 +45,10 @@ return {
         "prettier", -- prettier formatter
         "stylua", -- lua formatter
         "eslint_d", -- js linter
+        "rubocop", -- ruby linter
         "rubyfmt", -- ruby formatter
-        "htmlbeautifier", -- erb formatter
+        "erb-lint", -- eruby linter
+        "htmlbeautifier", -- eruby formatter
       },
     })
   end,
