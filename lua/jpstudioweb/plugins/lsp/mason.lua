@@ -33,7 +33,6 @@ return {
         "tailwindcss",
         "lua_ls",
         "emmet_ls",
-        "ruby_ls",
         "solargraph",
       },
       -- auto-install configured servers (with lspconfig)
