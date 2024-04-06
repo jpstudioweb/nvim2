@@ -20,7 +20,7 @@ keymap.set(
 -- close the file
 keymap.set("n", "<leader>q", ":q<CR>", { desc = "Close the file" })
 
--- execute python code
+-- execute ruby code
 keymap.set(
   "n",
   "<leader>b",

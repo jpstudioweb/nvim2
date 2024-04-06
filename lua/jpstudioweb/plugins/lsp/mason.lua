@@ -44,10 +44,6 @@ return {
       ensure_installed = {
         "prettier", -- prettier formatter
         "stylua", -- lua formatter
-        "isort", -- python formatter
-        "black", -- python formatter
-        "flake8", -- python linter
-        "djlint", -- django linter and formatter
         "eslint_d", -- js linter
         "rubyfmt", -- ruby formatter
         "htmlbeautifier", -- erb formatter

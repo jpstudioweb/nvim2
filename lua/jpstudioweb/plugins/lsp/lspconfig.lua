@@ -130,7 +130,7 @@ return {
       on_attach = on_attach,
       settings = {
         solargraph = {
-          diagnostics = false,
+          diagnostics = true,
           commandPath = "/home/jpstudioweb/.rbenv/shims/solargraph",
           useBundler = {
             "bundle",
@@ -140,10 +140,10 @@ return {
           hover = false,
           formatting = false,
           autoformat = false,
-          symbols = false,
-          definitions = false,
+          symbols = true,
+          definitions = true,
           rename = false,
-          references = false,
+          references = true,
           folding = false,
         },
       },
