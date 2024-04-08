@@ -119,18 +119,12 @@ return {
       filetypes = { "html", "eruby", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less" },
     })
 
-    -- configure ruby server
-    lspconfig["ruby_ls"].setup({
-      capabilities = capabilities,
-      on_attach = on_attach,
-    })
-
     lspconfig["solargraph"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
       settings = {
         solargraph = {
-          diagnostics = true,
+          diagnostics = false,
           commandPath = "/home/jpstudioweb/.rbenv/shims/solargraph",
           useBundler = {
             "bundle",
