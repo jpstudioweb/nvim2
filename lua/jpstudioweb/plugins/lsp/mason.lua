@@ -45,7 +45,6 @@ return {
         "stylua", -- lua formatter
         "eslint_d", -- js linter
         "rubocop", -- ruby linter
-        "rubyfmt", -- ruby formatter
         "erb-lint", -- eruby linter
         "htmlbeautifier", -- eruby formatter
       },
