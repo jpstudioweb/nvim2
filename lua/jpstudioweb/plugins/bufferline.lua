@@ -14,32 +14,31 @@ return {
     highlights = {
       fill = {
         ctermbg = "0",
-        bg = "#282828", -- Fundo geral do Gruvbox Dark
+        bg = "#ffffff", -- Fundo geral, claro no xcodelight
       },
       background = {
-        fg = "#a89984", -- Cor do texto inativo no Gruvbox Dark
-        bg = "#282828", -- Fundo dos itens inativos no Gruvbox Dark
+        fg = "#8a99a6", -- Cor do texto inativo, seguindo o comentário xcodelight
+        bg = "#ffffff", -- Fundo dos itens inativos
       },
       buffer_selected = {
-        fg = "#ebdbb2", -- Cor do texto selecionado no Gruvbox Dark
-        bg = "#3c3836", -- Fundo do item selecionado no Gruvbox Dark
+        fg = "#262626", -- Cor do texto selecionado, preto para melhor contraste
+        bg = "#ecf5ff", -- Fundo do item selecionado, azul claro suave para destacar
         bold = true,
       },
       buffer_visible = {
-        fg = "#a89984", -- Cor do texto visível, mas não selecionado no Gruvbox Dark
-        bg = "#282828", -- Fundo dos itens visíveis no Gruvbox Dark
+        fg = "#8a99a6", -- Cor do texto visível, mas não selecionado
+        bg = "#ffffff", -- Fundo dos itens visíveis
       },
       separator = {
-        fg = "#a89984", -- Cor do separador no Gruvbox Dark
-        bg = "#282828", -- Fundo do separador no Gruvbox Dark
+        fg = "#cdcdcd", -- Cor do separador, cinza claro
+        bg = "#ffffff", -- Fundo do separador, branco para uniformidade
       },
       separator_selected = {
-        fg = "#a89984", -- Cor do separador selecionado no Gruvbox Dark
-        bg = "#3c3836", -- Fundo do separador selecionado no Gruvbox Dark
+        fg = "#cdcdcd", -- Cor do separador selecionado, cinza claro para uniformidade
       },
       separator_visible = {
-        fg = "#a89984", -- Cor do separador visível, mas não selecionado no Gruvbox Dark
-        bg = "#282828", -- Fundo do separador visível no Gruvbox Dark
+        fg = "#cdcdcd", -- Cor do separador visível, mas não selecionado
+        bg = "#ffffff", -- Fundo do separador visível, branco para uniformidade
       },
       -- Outros destaques podem ser adicionados seguindo o mesmo padrão
     },

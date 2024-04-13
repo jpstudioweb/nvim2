@@ -3,24 +3,21 @@ return {
   config = function()
     local lualine = require("lualine")
 
-    -- Cores do tema Gruvbox Dark
+    -- Cores ajustadas para corresponder ao tema Xcode Light
     local colors = {
-      -- bg = "#282828", -- Background: escuro
-      bg = "none", -- Background: escuro
-      fg = "#ebdbb2", -- Foreground: claro
-      blue = "#83a598", -- Azul
-      cyan = "#8ec07c", -- Ciano
-      darkblue = "#458588", -- Azul escuro
-      green = "#b8bb26", -- Verde
-      orange = "#fe8019", -- Laranja
-      violet = "#d3869b", -- Violeta
-      magenta = "#b16286", -- Magenta
-      red = "#fb4934", -- Vermelho
-      yellow = "#fabd2f", -- Amarelo
+      bg = "#ffffff", -- Background geral: branco
+      fg = "#262626", -- Foreground: escuro para contraste
+      blue = "#0f68a0", -- Cor mais próxima do Xcode Light para azul
+      green = "#3e8087", -- Verde ajustado para Xcode Light
+      orange = "#ffaf00", -- Mantém a cor laranja (não especificada no Xcode Light, mantida para diversidade)
+      violet = "#ad3da4", -- Violeta do Xcode Light
+      magenta = "#804fb8", -- Magenta ajustado para Xcode Light
+      red = "#d12f1b", -- Vermelho do Xcode Light
+      yellow = "#ffd787", -- Amarelo ajustado, mantido do seu tema (não especificado no Xcode Light)
     }
 
-    -- Definição do tema para lualine baseado no Gruvbox Dark
-    local gruvbox_dark_theme = {
+    -- Definição do tema para lualine baseado nas cores do Xcode Light
+    local xcodelight = {
       normal = {
         a = { bg = colors.blue, fg = colors.bg, gui = "bold" },
         b = { bg = colors.bg, fg = colors.fg },
@@ -49,10 +46,10 @@ return {
       },
     }
 
-    -- Configuração do lualine com o tema Gruvbox Dark
+    -- Configuração do lualine com o tema Xcode Light ajustado
     lualine.setup({
       options = {
-        theme = gruvbox_dark_theme,
+        theme = xcodelight,
         component_separators = { left = "", right = "" },
         section_separators = { left = "", right = "" },
       },

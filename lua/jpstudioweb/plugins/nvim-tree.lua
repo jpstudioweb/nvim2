@@ -40,11 +40,10 @@ return {
         ignore = false,
       },
     })
-    vim.cmd([[
-      highlight NvimTreeFolderIcon guifg=#98971a
-      highlight NvimTreeFolderName guifg=#98971a
-      highlight NvimTreeIndentMarker guifg=#d65d0e
-    ]])
+    vim.cmd([[ highlight NvimTreeFolderArrowClosed guifg=#5c6873 ]])
+    vim.cmd([[ highlight NvimTreeFolderArrowOpen guifg=#5c6873 ]])
+    vim.cmd([[ highlight NvimTreeNormal guibg=#ffffff ]])
+    vim.cmd([[ highlight NvimTreeNormalNC guibg=#ffffff ]])
     -- set keymaps
     local keymap = vim.keymap
 
