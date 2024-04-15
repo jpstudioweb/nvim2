@@ -3,21 +3,21 @@ return {
   config = function()
     local lualine = require("lualine")
 
-    -- Cores ajustadas para corresponder ao tema Xcode Light
+    -- Cores ajustadas para corresponder ao tema Nord Light
     local colors = {
-      bg = "#ffffff", -- Background geral: branco
-      fg = "#262626", -- Foreground: escuro para contraste
-      blue = "#0f68a0", -- Cor mais próxima do Xcode Light para azul
-      green = "#3e8087", -- Verde ajustado para Xcode Light
-      orange = "#ffaf00", -- Mantém a cor laranja (não especificada no Xcode Light, mantida para diversidade)
-      violet = "#ad3da4", -- Violeta do Xcode Light
-      magenta = "#804fb8", -- Magenta ajustado para Xcode Light
-      red = "#d12f1b", -- Vermelho do Xcode Light
-      yellow = "#ffd787", -- Amarelo ajustado, mantido do seu tema (não especificado no Xcode Light)
+      bg = "#ECEFF4", -- Background geral: Nord Snow Storm
+      fg = "#4C566A", -- Foreground: Nord darker comment color
+      blue = "#81A1C1", -- Azul Nord
+      green = "#A3BE8C", -- Verde Nord
+      orange = "#D08770", -- Laranja Nord
+      violet = "#B48EAD", -- Violeta Nord
+      magenta = "#B48EAD", -- Magenta Nord
+      red = "#BF616A", -- Vermelho Nord
+      yellow = "#EBCB8B", -- Amarelo Nord
     }
 
-    -- Definição do tema para lualine baseado nas cores do Xcode Light
-    local xcodelight = {
+    -- Definição do tema para lualine baseado nas cores do Nord Light
+    local nordlight = {
       normal = {
         a = { bg = colors.blue, fg = colors.bg, gui = "bold" },
         b = { bg = colors.bg, fg = colors.fg },
@@ -46,10 +46,10 @@ return {
       },
     }
 
-    -- Configuração do lualine com o tema Xcode Light ajustado
+    -- Configuração do lualine com o tema Nord Light ajustado
     lualine.setup({
       options = {
-        theme = xcodelight,
+        theme = nordlight,
         component_separators = { left = "", right = "" },
         section_separators = { left = "", right = "" },
       },

@@ -46,20 +46,20 @@ opt.cursorline = false -- highlight the current cursor line
 -- turn on termguicolors for gruvbox colorscheme to work
 -- (have to use iterm2 or any other true color terminal)
 opt.termguicolors = true
-opt.background = "dark" -- colorschemes that can be light or dark will be made dark
+opt.background = "light" -- colorschemes that can be light or dark will be made dark
 opt.signcolumn = "yes" -- show sign column so that text doesn't shift
 -- transparency
-vim.cmd("autocmd ColorScheme * hi Normal ctermbg=NONE guibg=NONE")
-vim.cmd("autocmd ColorScheme * hi NonText ctermbg=NONE guibg=NONE")
-vim.cmd("autocmd ColorScheme * hi SignColumn ctermbg=NONE guibg=NONE")
-vim.cmd("autocmd ColorScheme * hi LineNr ctermbg=NONE guibg=NONE")
-vim.cmd("autocmd ColorScheme * hi DiagnosticSignError ctermbg=NONE guibg=NONE")
-vim.cmd("autocmd ColorScheme * hi DiagnosticSignWarning ctermbg=NONE guibg=NONE")
-vim.cmd("autocmd ColorScheme * hi DiagnosticSignInformation ctermbg=NONE guibg=NONE")
-vim.cmd("autocmd ColorScheme * hi DiagnosticSignHint ctermbg=NONE guibg=NONE")
-vim.cmd("autocmd ColorScheme * hi GitSignsAdd ctermbg=NONE guibg=NONE")
-vim.cmd("autocmd ColorScheme * hi GitSignsChange ctermbg=NONE guibg=NONE")
-vim.cmd("autocmd ColorScheme * hi GitSignsDelete ctermbg=NONE guibg=NONE")
+-- vim.cmd("autocmd ColorScheme * hi Normal ctermbg=NONE guibg=NONE")
+-- vim.cmd("autocmd ColorScheme * hi NonText ctermbg=NONE guibg=NONE")
+-- vim.cmd("autocmd ColorScheme * hi SignColumn ctermbg=NONE guibg=NONE")
+-- vim.cmd("autocmd ColorScheme * hi LineNr ctermbg=NONE guibg=NONE")
+-- vim.cmd("autocmd ColorScheme * hi DiagnosticSignError ctermbg=NONE guibg=NONE")
+-- vim.cmd("autocmd ColorScheme * hi DiagnosticSignWarning ctermbg=NONE guibg=NONE")
+-- vim.cmd("autocmd ColorScheme * hi DiagnosticSignInformation ctermbg=NONE guibg=NONE")
+-- vim.cmd("autocmd ColorScheme * hi DiagnosticSignHint ctermbg=NONE guibg=NONE")
+-- vim.cmd("autocmd ColorScheme * hi GitSignsAdd ctermbg=NONE guibg=NONE")
+-- vim.cmd("autocmd ColorScheme * hi GitSignsChange ctermbg=NONE guibg=NONE")
+-- vim.cmd("autocmd ColorScheme * hi GitSignsDelete ctermbg=NONE guibg=NONE")
 -- vim.cmd("autocmd ColorScheme * highlight NormalFloat guibg=#3c3836")
 -- vim.cmd("autocmd ColorScheme * highlight FloatBorder guifg=#d5c4a1 guibg=#3c3836")
 -- backspace
@@ -81,9 +81,4 @@ opt.swapfile = false
 -- Ecoding: UTF-8
 opt.encoding = "UTF-8"
 
--- Integração do triple-quote
--- vim.api.nvim_create_autocmd("BufWritePost", {
---   pattern = "*.py",
---   command = "!triple-quote %",
--- })
 opt.foldenable = false
