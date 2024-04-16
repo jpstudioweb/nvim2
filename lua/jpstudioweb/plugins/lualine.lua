@@ -3,23 +3,23 @@ return {
   config = function()
     local lualine = require("lualine")
 
-    -- Cores ajustadas para corresponder ao tema Nord Light
+    -- Cores ajustadas para corresponder ao tema Solarized Light
     local colors = {
-      bg = "#ECEFF4", -- Background geral: Nord Snow Storm
-      fg = "#4C566A", -- Foreground: Nord darker comment color
-      blue = "#81A1C1", -- Azul Nord
-      green = "#A3BE8C", -- Verde Nord
-      orange = "#D08770", -- Laranja Nord
-      violet = "#B48EAD", -- Violeta Nord
-      magenta = "#B48EAD", -- Magenta Nord
-      red = "#BF616A", -- Vermelho Nord
-      yellow = "#EBCB8B", -- Amarelo Nord
+      bg = "#fdf6e3", -- Background geral: base3
+      fg = "#657b83", -- Foreground: base00
+      blue = "#268bd2", -- Azul Solarized
+      green = "#859900", -- Verde Solarized
+      orange = "#cb4b16", -- Laranja Solarized
+      violet = "#6c71c4", -- Violeta Solarized
+      magenta = "#d33682", -- Magenta Solarized
+      red = "#dc322f", -- Vermelho Solarized
+      yellow = "#b58900", -- Amarelo Solarized
     }
 
-    -- Definição do tema para lualine baseado nas cores do Nord Light
-    local nordlight = {
+    -- Definição do tema para lualine baseado nas cores do Solarized Light
+    local solarized_light = {
       normal = {
-        a = { bg = colors.blue, fg = colors.bg, gui = "bold" },
+        a = { bg = colors.yellow, fg = colors.bg, gui = "bold" },
         b = { bg = colors.bg, fg = colors.fg },
         c = { bg = colors.bg, fg = colors.fg },
       },
@@ -46,10 +46,10 @@ return {
       },
     }
 
-    -- Configuração do lualine com o tema Nord Light ajustado
+    -- Configuração do lualine com o tema Solarized Light ajustado
     lualine.setup({
       options = {
-        theme = nordlight,
+        theme = solarized_light,
         component_separators = { left = "", right = "" },
         section_separators = { left = "", right = "" },
       },

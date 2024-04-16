@@ -43,7 +43,7 @@ opt.cursorline = false -- highlight the current cursor line
 
 -- appearance
 
--- turn on termguicolors for gruvbox colorscheme to work
+-- turn on termguicolors for solarized colorscheme to work
 -- (have to use iterm2 or any other true color terminal)
 opt.termguicolors = true
 opt.background = "light" -- colorschemes that can be light or dark will be made dark
