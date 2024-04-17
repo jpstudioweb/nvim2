@@ -18,7 +18,7 @@ return {
         markdown = { "prettier" },
         graphql = { "prettier" },
         lua = { "stylua" },
-        ruby = { "rubocop" },
+        ruby = { "rufo" },
         eruby = { "htmlbeautifier" },
       },
       format_on_save = {

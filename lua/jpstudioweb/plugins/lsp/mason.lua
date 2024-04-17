@@ -47,6 +47,7 @@ return {
         "rubocop", -- ruby linter
         "erb-lint", -- eruby linter
         "htmlbeautifier", -- eruby formatter
+        "rufo", -- ruby formatter
       },
     })
   end,

@@ -16,7 +16,7 @@ return {
       ensure_installed = {
         "stylua", -- lua formatter
         "prettier", -- prettier formatter
-        "rubocop", -- ruby formatter
+        "rufo", -- ruby formatter
         "htmlbeautifier", -- eruby formatter
         "eslint_d", -- js linter
         "rubocop", -- ruby linter
@@ -40,7 +40,7 @@ return {
         --  to disable file types use
         formatting.prettierth, -- js/ts formatter
         formatting.stylua, -- lua formatter
-        formatting.rubocop, -- formatter ruby
+        formatting.rufo, -- formatter ruby
         formatting.htmlbeautifier, -- formatter erb
         diagnostics.rubocop, -- ruby linter
         diagnostics.erb_lint, -- eruby linter
