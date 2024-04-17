@@ -52,7 +52,7 @@ opt.signcolumn = "yes" -- show sign column so that text doesn't shift
 -- vim.cmd("autocmd ColorScheme * hi Normal ctermbg=NONE guibg=NONE")
 -- vim.cmd("autocmd ColorScheme * hi NonText ctermbg=NONE guibg=NONE")
 -- vim.cmd("autocmd ColorScheme * hi SignColumn ctermbg=NONE guibg=NONE")
--- vim.cmd("autocmd ColorScheme * hi LineNr ctermbg=NONE guibg=NONE")
+vim.cmd("autocmd ColorScheme * hi LineNr ctermbg=NONE guibg=NONE")
 -- vim.cmd("autocmd ColorScheme * hi DiagnosticSignError ctermbg=NONE guibg=NONE")
 -- vim.cmd("autocmd ColorScheme * hi DiagnosticSignWarning ctermbg=NONE guibg=NONE")
 -- vim.cmd("autocmd ColorScheme * hi DiagnosticSignInformation ctermbg=NONE guibg=NONE")
@@ -60,8 +60,7 @@ opt.signcolumn = "yes" -- show sign column so that text doesn't shift
 -- vim.cmd("autocmd ColorScheme * hi GitSignsAdd ctermbg=NONE guibg=NONE")
 -- vim.cmd("autocmd ColorScheme * hi GitSignsChange ctermbg=NONE guibg=NONE")
 -- vim.cmd("autocmd ColorScheme * hi GitSignsDelete ctermbg=NONE guibg=NONE")
--- vim.cmd("autocmd ColorScheme * highlight NormalFloat guibg=#3c3836")
--- vim.cmd("autocmd ColorScheme * highlight FloatBorder guifg=#d5c4a1 guibg=#3c3836")
+
 -- backspace
 opt.backspace = "indent,eol,start" -- allow backspace on indent, end of line or insert mode start position
 
@@ -82,3 +81,18 @@ opt.swapfile = false
 opt.encoding = "UTF-8"
 
 opt.foldenable = false
+
+vim.cmd([[
+  augroup NvimTreeBgTransparent
+    autocmd!
+    autocmd FileType NvimTree hi NvimTreeNormal ctermbg=NONE guibg=NONE
+  augroup END
+]])
+
+vim.cmd([[
+  augroup TelescopePromptTransparent
+    autocmd!
+    autocmd FileType TelescopePrompt hi TelescopeNormal ctermbg=NONE guibg=NONE
+    autocmd FileType TelescopePrompt hi TelescopeBorder ctermbg=NONE guibg=NONE
+  augroup END
+]])
