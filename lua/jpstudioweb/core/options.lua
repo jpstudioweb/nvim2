@@ -45,7 +45,7 @@ opt.cursorline = false -- highlight the current cursor line
 
 -- (have to use iterm2 or any other true color terminal)
 opt.termguicolors = false
--- opt.background = "dark" -- colorschemes that can be light or dark will be made dark
+opt.background = "dark" -- colorschemes that can be light or dark will be made dark
 opt.signcolumn = "yes" -- show sign column so that text doesn't shift
 -- transparency
 -- vim.cmd("autocmd ColorScheme * hi Normal ctermbg=NONE guibg=NONE")
@@ -80,18 +80,3 @@ opt.swapfile = false
 opt.encoding = "UTF-8"
 
 opt.foldenable = false
-
--- vim.cmd([[
---   augroup NvimTreeBgTransparent
---     autocmd!
---     autocmd FileType NvimTree hi NvimTreeNormal ctermbg=NONE guibg=NONE
---   augroup END
--- ]])
---
--- vim.cmd([[
---   augroup TelescopePromptTransparent
---     autocmd!
---     autocmd FileType TelescopePrompt hi TelescopeNormal ctermbg=NONE guibg=NONE
---     autocmd FileType TelescopePrompt hi TelescopeBorder ctermbg=NONE guibg=NONE
---   augroup END
--- ]])

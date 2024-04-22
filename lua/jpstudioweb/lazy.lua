@@ -12,9 +12,9 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({ { import = "jpstudioweb.plugins" }, { import = "jpstudioweb.plugins.lsp" } }, {
-  -- install = {
-  --   colorscheme = { "nord" },
-  -- },
+  install = {
+    colorscheme = { "amber" },
+  },
   checker = {
     enabled = true,
     notify = false,
