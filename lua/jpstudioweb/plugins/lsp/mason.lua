@@ -34,7 +34,7 @@ return {
         "lua_ls",
         "emmet_ls",
         "solargraph",
-        "prismals",
+        "clangd",
       },
       -- auto-install configured servers (with lspconfig)
       automatic_installation = true, -- not the same as ensure_installed
@@ -48,6 +48,8 @@ return {
         "rubocop", -- ruby linter and formatter
         "erb-lint", -- eruby linter
         "htmlbeautifier", -- eruby formatter
+        "cpplint", -- linter para C e C++
+        "clang-format", -- formatter para C
       },
     })
   end,

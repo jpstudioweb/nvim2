@@ -20,6 +20,7 @@ return {
         lua = { "stylua" },
         ruby = { "rubocop" },
         eruby = { "htmlbeautifier" },
+        c = { "clang-format" },
       },
       format_on_save = {
         lsp_fallback = true,

@@ -12,6 +12,7 @@ return {
       typescriptreact = { "eslint_d" },
       ruby = { "rubocop" },
       eruby = { "erb_lint" },
+      c = { "cpplint" },
     }
 
     local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })
