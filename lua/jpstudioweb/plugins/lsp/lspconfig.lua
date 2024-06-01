@@ -182,5 +182,12 @@ return {
       capabilities = capabilities,
       on_attach = on_attach,
     })
+
+    -- Elixir
+    lspconfig["elixirls"].setup({
+      cmd = { "elixir-ls" },
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
   end,
 }
