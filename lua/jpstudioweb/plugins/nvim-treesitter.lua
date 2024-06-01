@@ -48,6 +48,8 @@ return {
           "query",
           "ruby",
           "elixir",
+          "eex",
+          "heex",
         },
         incremental_selection = {
           enable = true,
