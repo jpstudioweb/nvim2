@@ -47,6 +47,7 @@ return {
           "gitignore",
           "query",
           "ruby",
+          "elixir",
         },
         incremental_selection = {
           enable = true,
