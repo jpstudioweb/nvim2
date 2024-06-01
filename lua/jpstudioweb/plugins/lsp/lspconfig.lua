@@ -188,6 +188,12 @@ return {
       cmd = { "elixir-ls" },
       capabilities = capabilities,
       on_attach = on_attach,
+      settings = {
+        elixirLS = {
+          dialyzerEnabled = true,
+          formatterEnabled = true,
+        },
+      },
     })
   end,
 }
