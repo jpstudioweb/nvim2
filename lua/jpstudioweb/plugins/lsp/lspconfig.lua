@@ -190,7 +190,6 @@ return {
       on_attach = on_attach,
       settings = {
         elixirLS = {
-          dialyzerEnabled = true,
           formatterEnabled = true,
         },
       },

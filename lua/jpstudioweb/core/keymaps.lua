@@ -23,8 +23,8 @@ keymap.set("n", "<leader>q", ":q<CR>", { desc = "Close the file" })
 keymap.set(
   "n",
   "<leader>b",
-  ":! ruby %<CR>",
-  { desc = "Run the current ruby script. Shortcut for quick testing and execution" }
+  ":! elixir %<CR>",
+  { desc = "Run the current elixir script. Shortcut for quick testing and execution" }
 )
 
 -- Save allopen files
