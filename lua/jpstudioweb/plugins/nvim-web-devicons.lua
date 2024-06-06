@@ -4,7 +4,7 @@ return {
     require("nvim-web-devicons").set_icon({
       gql = {
         icon = "",
-        -- color = "#b58900",
+        -- color = "#7aa2f7",
         -- cterm_color = "136",
         name = "GraphQL",
       },

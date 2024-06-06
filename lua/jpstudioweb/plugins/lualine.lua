@@ -2,50 +2,56 @@ return {
   "nvim-lualine/lualine.nvim",
   config = function()
     local lualine = require("lualine")
+
+    -- Cores do tema TokyoNight
     local colors = {
-      black = "#0e0e0e",
-      white = "#ffffff",
-      gray = "#808080", -- Um cinza para detalhes se necessário
+      bg = "#1a1b26", -- Background: escuro
+      fg = "#c0caf5", -- Foreground: claro
+      blue = "#7aa2f7", -- Azul
+      cyan = "#7dcfff", -- Ciano
+      darkblue = "#7aa2f7", -- Azul escuro
+      green = "#9ece6a", -- Verde
+      orange = "#ff9e64", -- Laranja
+      violet = "#bb9af7", -- Violeta
+      magenta = "#ff007c", -- Magenta
+      red = "#f7768e", -- Vermelho
+      yellow = "#e0af68", -- Amarelo
     }
 
-    -- Configuração das seções do Lualine
-    local sections = {
+    -- Definição do tema para lualine baseado no TokyoNight
+    local tokyonight_theme = {
       normal = {
-        a = { fg = colors.white, bg = colors.black, gui = "bold" },
-        b = { fg = colors.white, bg = colors.black },
-        c = { fg = colors.white, bg = colors.black },
+        a = { bg = colors.blue, fg = colors.bg, gui = "bold" },
+        b = { bg = colors.bg, fg = colors.fg },
+        c = { bg = colors.bg, fg = colors.fg },
       },
       insert = {
-        a = { fg = colors.white, bg = colors.black, gui = "bold" },
-        b = { fg = colors.white, bg = colors.black },
-        c = { fg = colors.white, bg = colors.black },
+        a = { bg = colors.green, fg = colors.bg, gui = "bold" },
+        b = { bg = colors.bg, fg = colors.fg },
       },
       visual = {
-        a = { fg = colors.white, bg = colors.black, gui = "bold" },
-        b = { fg = colors.white, bg = colors.black },
-        c = { fg = colors.white, bg = colors.black },
+        a = { bg = colors.violet, fg = colors.bg, gui = "bold" },
+        b = { bg = colors.bg, fg = colors.fg },
       },
       replace = {
-        a = { fg = colors.white, bg = colors.black, gui = "bold" },
-        b = { fg = colors.white, bg = colors.black },
-        c = { fg = colors.white, bg = colors.black },
+        a = { bg = colors.red, fg = colors.bg, gui = "bold" },
+        b = { bg = colors.bg, fg = colors.fg },
       },
       command = {
-        a = { fg = colors.white, bg = colors.black, gui = "bold" },
-        b = { fg = colors.white, bg = colors.black },
-        c = { fg = colors.white, bg = colors.black },
+        a = { bg = colors.orange, fg = colors.bg, gui = "bold" },
+        b = { bg = colors.bg, fg = colors.fg },
       },
       inactive = {
-        a = { fg = colors.gray, bg = colors.black, gui = "bold" },
-        b = { fg = colors.gray, bg = colors.black },
-        c = { fg = colors.gray, bg = colors.black },
+        a = { bg = colors.bg, fg = colors.fg },
+        b = { bg = colors.bg, fg = colors.fg },
+        c = { bg = colors.bg, fg = colors.fg },
       },
     }
 
-    -- Configuração do Lualine
+    -- Configuração do lualine com o tema TokyoNight
     lualine.setup({
       options = {
-        theme = sections, -- Usar as seções configuradas acima como tema
+        theme = tokyonight_theme,
         component_separators = { left = "", right = "" },
         section_separators = { left = "", right = "" },
       },
