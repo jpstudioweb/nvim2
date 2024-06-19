@@ -16,7 +16,6 @@ Before using this configuration, ensure you have the following installed:
 - **Node.js** (version 14 or higher)
 - **xsel** or **xclip** (for clipboard support)
 - **ripgrep** and **fzf**(for Telescope)
-- **Python 3** and `pynvim` package
 
 ## Installation
 
@@ -49,6 +48,4 @@ Before using this configuration, ensure you have the following installed:
    ```sh
    sudo apt-get install xsel
    npm install -g neovim
-   gem install neovim
-   pip install neovim
    ```
