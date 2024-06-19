@@ -45,7 +45,7 @@ opt.cursorline = false -- highlight the current cursor line
 
 -- (have to use iterm2 or any other true color terminal)
 opt.termguicolors = false
-opt.background = "dark" -- colorschemes that can be light or dark will be made dark
+opt.background = "light" -- colorschemes that can be light or dark will be made dark
 opt.signcolumn = "yes" -- show sign column so that text doesn't shift
 -- transparency
 -- vim.cmd("autocmd ColorScheme * hi Normal ctermbg=NONE guibg=NONE")
