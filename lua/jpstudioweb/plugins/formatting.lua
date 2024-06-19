@@ -18,8 +18,6 @@ return {
         markdown = { "prettier" },
         graphql = { "prettier" },
         lua = { "stylua" },
-        ruby = { "rubocop" },
-        eruby = { "htmlbeautifier" },
         c = { "clang-format" },
       },
       format_on_save = {

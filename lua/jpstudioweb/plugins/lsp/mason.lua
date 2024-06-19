@@ -47,9 +47,6 @@ return {
         "prettier", -- prettier formatter
         "stylua", -- lua formatter
         "eslint_d", -- js linter
-        "rubocop", -- ruby linter and formatter
-        "erb-lint", -- eruby linter
-        "htmlbeautifier", -- eruby formatter
         "cpplint", -- linter para C e C++
         "clang-format", -- formatter para C
       },

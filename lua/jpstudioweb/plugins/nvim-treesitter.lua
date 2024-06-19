@@ -46,7 +46,6 @@ return {
           "dockerfile",
           "gitignore",
           "query",
-          "ruby",
           "elixir",
           "eex",
           "heex",

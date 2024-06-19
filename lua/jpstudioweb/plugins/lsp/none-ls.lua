@@ -16,10 +16,7 @@ return {
       ensure_installed = {
         "stylua", -- lua formatter
         "prettier", -- prettier formatter
-        "htmlbeautifier", -- eruby formatter
         "eslint_d", -- js linter
-        "rubocop", -- ruby linter and formatter
-        "erb_lint", -- eruby linter
         "cpplint", -- linter para C e C++
         "clang-format", -- formatter para C
       },
@@ -41,11 +38,7 @@ return {
         --  to disable file types use
         formatting.prettierth, -- js/ts formatter
         formatting.stylua, -- lua formatter
-        formatting.rubocop, -- formatter ruby
-        formatting.htmlbeautifier, -- formatter erb
         formatting = { "clang-formatter" },
-        diagnostics.rubocop, -- ruby linter
-        diagnostics.erb_lint, -- eruby linter
         diagnostics.cpplint, -- c linter
         diagnostics.eslint_d.with({ -- js/ts linter
           condition = function(utils)

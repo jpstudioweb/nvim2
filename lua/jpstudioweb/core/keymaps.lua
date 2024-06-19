@@ -19,7 +19,7 @@ keymap.set(
 -- close the file
 keymap.set("n", "<leader>q", ":q<CR>", { desc = "Close the file" })
 
--- execute ruby code
+-- execute elixir code
 keymap.set(
   "n",
   "<leader>b",

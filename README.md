@@ -17,7 +17,6 @@ Before using this configuration, ensure you have the following installed:
 - **xsel** or **xclip** (for clipboard support)
 - **ripgrep** and **fzf**(for Telescope)
 - **Python 3** and `pynvim` package
-- **Ruby** and `neovim` gem
 
 ## Installation
 

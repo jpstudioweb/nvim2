@@ -10,8 +10,6 @@ return {
       typescript = { "eslint_d" },
       javascriptreact = { "eslint_d" },
       typescriptreact = { "eslint_d" },
-      ruby = { "rubocop" },
-      eruby = { "erb_lint" },
       c = { "cpplint" },
     }
 
