@@ -3,23 +3,23 @@ return {
   config = function()
     local lualine = require("lualine")
 
-    -- Cores do tema TokyoNight
+    -- Cores do tema Gruvbox Light
     local colors = {
-      bg = "#1a1b26", -- Background: escuro
-      fg = "#c0caf5", -- Foreground: claro
-      blue = "#7aa2f7", -- Azul
-      cyan = "#7dcfff", -- Ciano
-      darkblue = "#7aa2f7", -- Azul escuro
-      green = "#9ece6a", -- Verde
-      orange = "#ff9e64", -- Laranja
-      violet = "#bb9af7", -- Violeta
-      magenta = "#ff007c", -- Magenta
-      red = "#f7768e", -- Vermelho
-      yellow = "#e0af68", -- Amarelo
+      bg = "#fbf1c7", -- Background: claro
+      fg = "#3c3836", -- Foreground: escuro
+      blue = "#458588", -- Azul
+      cyan = "#689d6a", -- Ciano
+      darkblue = "#076678", -- Azul escuro
+      green = "#98971a", -- Verde
+      orange = "#d65d0e", -- Laranja
+      violet = "#b16286", -- Violeta
+      magenta = "#d3869b", -- Magenta
+      red = "#cc241d", -- Vermelho
+      yellow = "#d79921", -- Amarelo
     }
 
-    -- Definição do tema para lualine baseado no TokyoNight
-    local tokyonight_theme = {
+    -- Definição do tema para lualine baseado no Gruvbox Light
+    local gruvbox_light_theme = {
       normal = {
         a = { bg = colors.blue, fg = colors.bg, gui = "bold" },
         b = { bg = colors.bg, fg = colors.fg },
@@ -48,10 +48,10 @@ return {
       },
     }
 
-    -- Configuração do lualine com o tema TokyoNight
+    -- Configuração do lualine com o tema Gruvbox Light
     lualine.setup({
       options = {
-        theme = tokyonight_theme,
+        theme = gruvbox_light_theme,
         component_separators = { left = "", right = "" },
         section_separators = { left = "", right = "" },
       },
