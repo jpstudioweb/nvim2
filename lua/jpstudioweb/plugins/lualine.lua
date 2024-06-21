@@ -3,23 +3,23 @@ return {
   config = function()
     local lualine = require("lualine")
 
-    -- Cores do tema Gruvbox Light
+    -- Cores do tema Nord Light
     local colors = {
-      bg = "#fbf1c7", -- Background: claro
-      fg = "#3c3836", -- Foreground: escuro
-      blue = "#458588", -- Azul
-      cyan = "#689d6a", -- Ciano
-      darkblue = "#076678", -- Azul escuro
-      green = "#98971a", -- Verde
-      orange = "#d65d0e", -- Laranja
-      violet = "#b16286", -- Violeta
-      magenta = "#d3869b", -- Magenta
-      red = "#cc241d", -- Vermelho
-      yellow = "#d79921", -- Amarelo
+      bg = "#ECEFF4", -- Background: claro
+      fg = "#2E3440", -- Foreground: escuro
+      blue = "#5E81AC", -- Azul
+      cyan = "#88C0D0", -- Ciano
+      darkblue = "#4C566A", -- Azul escuro
+      green = "#A3BE8C", -- Verde
+      orange = "#D08770", -- Laranja
+      violet = "#B48EAD", -- Violeta
+      magenta = "#BF616A", -- Magenta
+      red = "#BF616A", -- Vermelho
+      yellow = "#EBCB8B", -- Amarelo
     }
 
-    -- Definição do tema para lualine baseado no Gruvbox Light
-    local gruvbox_light_theme = {
+    -- Definição do tema para lualine baseado no Nord Light
+    local nord_light_theme = {
       normal = {
         a = { bg = colors.blue, fg = colors.bg, gui = "bold" },
         b = { bg = colors.bg, fg = colors.fg },
@@ -48,10 +48,10 @@ return {
       },
     }
 
-    -- Configuração do lualine com o tema Gruvbox Light
+    -- Configuração do lualine com o tema Nord Light
     lualine.setup({
       options = {
-        theme = gruvbox_light_theme,
+        theme = nord_light_theme,
         component_separators = { left = "", right = "" },
         section_separators = { left = "", right = "" },
       },
