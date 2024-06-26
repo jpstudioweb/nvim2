@@ -17,8 +17,6 @@ return {
         "stylua", -- lua formatter
         "prettier", -- prettier formatter
         "eslint_d", -- js linter
-        "cpplint", -- linter para C e C++
-        "clang-format", -- formatter para C
       },
     })
 
@@ -38,8 +36,6 @@ return {
         --  to disable file types use
         formatting.prettierth, -- js/ts formatter
         formatting.stylua, -- lua formatter
-        formatting = { "clang-formatter" },
-        diagnostics.cpplint, -- c linter
         diagnostics.eslint_d.with({ -- js/ts linter
           condition = function(utils)
             return utils.root_has_file({ ".eslintrc.js", ".eslintrc.cjs" }) -- only enable if root has .eslintrc.js or .eslintrc.cjs

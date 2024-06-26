@@ -18,7 +18,6 @@ return {
         markdown = { "prettier" },
         graphql = { "prettier" },
         lua = { "stylua" },
-        c = { "clang-format" },
       },
       format_on_save = {
         lsp_fallback = true,

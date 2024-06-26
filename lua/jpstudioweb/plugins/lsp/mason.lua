@@ -33,8 +33,6 @@ return {
         "tailwindcss",
         "lua_ls",
         "emmet_ls",
-        "solargraph",
-        "clangd",
         "marksman",
         "elixirls",
       },
@@ -47,8 +45,6 @@ return {
         "prettier", -- prettier formatter
         "stylua", -- lua formatter
         "eslint_d", -- js linter
-        "cpplint", -- linter para C e C++
-        "clang-format", -- formatter para C
       },
     })
   end,

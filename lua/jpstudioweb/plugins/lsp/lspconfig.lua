@@ -132,30 +132,6 @@ return {
       filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less" },
     })
 
-    lspconfig["solargraph"].setup({
-      capabilities = capabilities,
-      on_attach = on_attach,
-      settings = {
-        solargraph = {
-          diagnostics = false,
-          commandPath = "/home/jpstudioweb/.rbenv/shims/solargraph",
-          useBundler = {
-            "bundle",
-            "exec",
-          },
-          completion = true,
-          hover = false,
-          formatting = false,
-          autoformat = false,
-          symbols = true,
-          definitions = true,
-          rename = false,
-          references = true,
-          folding = false,
-        },
-      },
-    })
-
     -- configure lua server (with special settings)
     lspconfig["lua_ls"].setup({
       capabilities = capabilities,
